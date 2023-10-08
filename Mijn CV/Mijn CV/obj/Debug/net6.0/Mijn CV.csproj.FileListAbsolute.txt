@@ -1,0 +1,30 @@
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\bin\Debug\net6.0\appsettings.json
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\bin\Debug\net6.0\Mijn CV.staticwebassets.runtime.json
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\bin\Debug\net6.0\Mijn CV.exe
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\bin\Debug\net6.0\Mijn CV.deps.json
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\bin\Debug\net6.0\Mijn CV.runtimeconfig.json
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\bin\Debug\net6.0\Mijn CV.dll
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\bin\Debug\net6.0\Mijn CV.pdb
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\Mijn CV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\Mijn CV.AssemblyInfoInputs.cache
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\Mijn CV.AssemblyInfo.cs
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\Mijn CV.csproj.CoreCompileInputs.cache
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\Mijn CV.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\Mijn CV.RazorAssemblyInfo.cache
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\Mijn CV.RazorAssemblyInfo.cs
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\staticwebassets\msbuild.Mijn CV.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\staticwebassets\msbuild.build.Mijn CV.props
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Mijn CV.props
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Mijn CV.props
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\scopedcss\bundle\Mijn CV.styles.css
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\scopedcss\projectbundle\Mijn CV.bundle.scp.css
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\Mijn CV.dll
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\refint\Mijn CV.dll
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\Mijn CV.pdb
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\Mijn CV.genruntimeconfig.cache
+C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Mijn CV\Mijn CV\obj\Debug\net6.0\ref\Mijn CV.dll
