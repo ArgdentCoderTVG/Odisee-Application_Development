@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Mijn_CV.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/myCustomStyle.css" asp-append-version="true" />
     
     @* Using Razor @RenderSection to optionally include additional CSS in individual views in ASP.NET Core*@
     @RenderSection("Styles", required: false)
@@ -18,15 +19,15 @@
 @* //[»] BODY |-----------|*|-----------| *@
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav id="navBar" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 slide-down">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Mijn_CV</a>
+                @* <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Mijn_CV</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                </button> *@
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
+                    <ul class="navbar-nav flex-grow-1 justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -43,7 +44,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="KuroAshiSanji">Black Leg Sanji</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="IndexTheEvent">Template</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="OnePieceQualities">Template</a>
                         </li>
                     </ul>
                 </div>

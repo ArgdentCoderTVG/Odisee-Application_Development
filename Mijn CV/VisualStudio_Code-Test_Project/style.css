@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(to top, #116bb2 0%, #68d0e0 100%);
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 480px;
+    padding: 20px;
+    background: black;
+    border: 5px solid white;
+    border-radius: 12px;
+}
+
+.clip-text-1,
+    .clip-text-2 {
+        display: inline;
+    }
+
+
+    .clip-text-1 {
+        font-family: 'Anton';
+        font-size: 15rem;
+        text-align: center;
+        color: #68d0e0;
+        letter-spacing: 0px;
+        white-space: nowrap;
+
+        @supports (background-clip:text) or (-webkit-background-clip:text) {
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: url('/one_piece-art-3.jpg');
+            background-size: cover;
+            background-position: center top;
+        }
+    }
+
+    .clip-text-2 {
+        font-family: 'Anton';
+        font-size: 15rem;
+        text-align: center;
+        color: #68d0e0;
+        letter-spacing: 0px;
+        white-space: nowrap;
+
+        @supports (background-clip:text) or (-webkit-background-clip:text) {
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: url('/one_piece-art-4.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-position: calc(50% + 20px) calc(0% + 20px);
+        }
+    }
+
+h1 {
+    color: #fff;
+    margin: 0;
+
+    pre {
+
+        span {
+            background-color: rgba(#000, .15);
+            padding: 0.3rem;
+            border-radius: 6px;
+        }
+    }
+}
+
+.links {
+    color: #fff;
+    margin: 1rem auto;
+
+    a {
+        display: inline-block;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+}

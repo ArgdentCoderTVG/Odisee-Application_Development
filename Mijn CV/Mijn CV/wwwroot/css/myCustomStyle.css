@@ -1,0 +1,112 @@
+﻿/* Code source: https://codepen.io/pierrinho/pen/NEYmLO */
+/*Image source 1: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e372066a-75a6-4de3-801a-673f7364ca9c/d57ukph-cdc0c7e6-22da-4f1e-8138-f151e8ac824a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UzNzIwNjZhLTc1YTYtNGRlMy04MDFhLTY3M2Y3MzY0Y2E5Y1wvZDU3dWtwaC1jZGMwYzdlNi0yMmRhLTRmMWUtODEzOC1mMTUxZThhYzgyNGEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.r1HSv_3avMW0c2_rZ-hc4fw1sq6swVBnH1kTPaiMI4I */
+/*Image source 2: https://www.hdwallpapers.in/download/monkey_d__luffy_roronoa_zoro_sanji_hd_one_piece-1920x1080.jpg */
+
+
+/* Implementing CSS for: One piece clipping art display*/
+.clip-text-1,
+.clip-text-2 {
+    display: inline;
+    line-height: 1;
+    /*vertical-align: top;*/
+}
+
+
+.clip-text-1 {
+    font-family: 'Anton';
+    font-size: 15rem;
+    text-align: center;
+    color: #68d0e0;
+    letter-spacing: 0px;
+    white-space: nowrap;
+
+    /* Original enclosing statement (compatibility) not in scope: @supports (background-clip:text) or (-webkit-background-clip:text) { {code...} }*/
+    color: transparent !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    background-image: url('/img/one_piece-art-3.jpg') !important;
+    background-size: cover !important;
+    background-position: center top !important;
+}
+
+.clip-text-2 {
+    font-family: 'Anton';
+    font-size: 15rem;
+    text-align: center;
+    color: #68d0e0;
+    letter-spacing: 0px;
+    white-space: nowrap;
+
+    /* Original enclosing statement (compatibility) not in scope: @supports (background-clip:text) or (-webkit-background-clip:text) { {code...} }*/
+    color: transparent !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    background-image: url('/img/one_piece-art-4.jpg') !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    background-position: calc(50% + 20px) calc(0% + 20px) !important;
+}
+
+/* Implementing CSS for: Kaido flame torch dragon background video */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-content {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Implementing CSS for: Landing page content aligment (relative to video content) */
+
+#hero {
+    position: relative !important;
+}
+
+    /* Move h1 to the top */
+#onePieceLogo {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0px !important;
+}
+
+#verticalFlexcontainer_OverlayLinks {
+    margin-top: auto;
+    margin-bottom: 50px !important;
+}
+
+.play-btn {
+    width: 50px !important;
+    height: 50px !important;
+    display: inline-block !important;
+}
+
+/* Implementing CSS for: Fading in navbar after video is done playing */
+#navBar.slide-down {
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out;
+}
+
+#navBar.slide-down.show {
+    transform: translateY(0);
+}

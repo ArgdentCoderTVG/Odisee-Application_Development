@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Mijn CV.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\css\\myCustomStyle.css",
+      "PackagePath": "staticwebassets\\css\\myCustomStyle.css"
+    },
+    {
       "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -71,6 +75,42 @@
     {
       "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\one_piece-art-3.jpg",
+      "PackagePath": "staticwebassets\\img\\one_piece-art-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\one_piece-art-4.jpg",
+      "PackagePath": "staticwebassets\\img\\one_piece-art-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\one_piece-art.jpg",
+      "PackagePath": "staticwebassets\\img\\one_piece-art.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\one_piece-luffy_vs_katakuri.jpg",
+      "PackagePath": "staticwebassets\\img\\one_piece-luffy_vs_katakuri.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\one_piece-netflix-2.jpg",
+      "PackagePath": "staticwebassets\\img\\one_piece-netflix-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\one_piece-slavery.jpg",
+      "PackagePath": "staticwebassets\\img\\one_piece-slavery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\one_piece-strong_world.jpg",
+      "PackagePath": "staticwebassets\\img\\one_piece-strong_world.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\one_piece-the_guardian.jpg",
+      "PackagePath": "staticwebassets\\img\\one_piece-the_guardian.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\one_piece-zoro_vs_king.jpg",
+      "PackagePath": "staticwebassets\\img\\one_piece-zoro_vs_king.jpg"
     },
     {
       "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\img\\speakers\\1.jpg",
@@ -675,6 +715,10 @@
     {
       "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\template_assets\\vendor\\swiper\\swiper-bundle.min.js.map",
       "PackagePath": "staticwebassets\\template_assets\\vendor\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Mijn CV\\Mijn CV\\wwwroot\\videos\\kaido-flame-dragon-torch.mp4",
+      "PackagePath": "staticwebassets\\videos\\kaido-flame-dragon-torch.mp4"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Mijn CV.Microsoft.AspNetCore.StaticWebAssets.props",
