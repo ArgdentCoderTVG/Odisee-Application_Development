@@ -1,0 +1,25 @@
+﻿@model Mijn_CV.Models.ViewModels.DevilFruitViewModel
+@{
+    ViewData["Title"] = "Devil Fruit in One Piece!";
+}
+
+<table border="1" class="table mx-auto" style="width: 50%;">
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <td>@Model.OnePieceDevilFruit.Name</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>@Model.OnePieceDevilFruit.Description</td>
+        </tr>
+        <tr>
+            <th>Image</th>
+            <td><img src="@Model.OnePieceDevilFruit.ImageUrl" alt="@Model.OnePieceDevilFruit.Name" width="100"></td>
+        </tr>
+        <tr>
+            <th>Wiki</th>
+            <td><a href="@Model.OnePieceDevilFruit.WikiUrl">The wiki page</a></td>
+        </tr>
+    </tbody>
+</table>

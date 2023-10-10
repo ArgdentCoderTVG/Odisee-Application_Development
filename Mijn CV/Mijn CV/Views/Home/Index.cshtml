@@ -1,9 +1,7 @@
-﻿@* Code section: VIEW DATA *@
+﻿@model Mijn_CV.Models.ViewModels.HomeViewModel
 @{
-    ViewData["Title"] = "Testing out the template";
+    ViewData["Title"] = "Landing page";
 }
-
-@model OnePieceQualitiesModel
 
 @* Code section:  LICENSE INFO *@
 <!-- =======================================================
@@ -13,6 +11,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 @* Code section:  STYLES *@
 @* Using Razor @section to include view-specific CSS in ASP.NET Core. *@
 @section Styles {
@@ -33,6 +32,9 @@
 
     <!-- Template Main CSS File -->
     <link rel="stylesheet" href="~/template_assets//css/style.css">
+
+    <!-- Custom (extra) CSS -->
+    <link rel="stylesheet" href="~/css/myCustomStyle.css">
 }
 
 @* Code section:  DYNAMIC CONTENT *@
@@ -63,7 +65,7 @@
         </div>
     </section><!-- End Hero Section -->
 
-    <section id="onePieceQualities">
+    <section id="speakers">
         <div class="container" data-aos="fade-up">
             <div class="section-header mt-2">
                 <h2>Key to Onepiece</h2>
@@ -79,13 +81,6 @@
                             <div class="details">
                                 <h3><a href="@quality.ExploratoryLink">@quality.Name</a></h3>
                                 <p>@quality.Description</p>
-                                @* <div class="social">
-                            <!-- You can populate this section dynamically if you have social links in your model -->
-                            <a href=""><i class="bi bi-twitter"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
-                            <a href=""><i class="bi bi-instagram"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div> *@
                             </div>
                         </div>
                     </div>
@@ -110,5 +105,9 @@
 
     <!-- Template Main JS File -->
     <script src="~/template_assets/js/main.js"></script>
+
+
+    <!-- Custom (extra) JS -->
+    <script src="~/js/myCustomCode.js"></script>
 }
 

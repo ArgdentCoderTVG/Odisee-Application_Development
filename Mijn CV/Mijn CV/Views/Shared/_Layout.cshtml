@@ -9,8 +9,6 @@
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Mijn_CV.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/myCustomStyle.css" asp-append-version="true" />
     
     @* Using Razor @RenderSection to optionally include additional CSS in individual views in ASP.NET Core*@
     @RenderSection("Styles", required: false)
@@ -32,16 +30,16 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="MugiWaraNoIchimi">The Straw Hats</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="DevilFruit">Devil fruit</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="JoyBoyLuffy">Monkey D. Luffy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Luffy">Monkey D. Luffy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="KaizokuGariNoZoro">Pirate hunter Zoro</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Zoro">Pirate hunter Zoro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="KuroAshiSanji">Black Leg Sanji</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Sanji">Black Leg Sanji</a>
                         </li>
                     </ul>
                 </div>
@@ -57,11 +55,31 @@
     </div>
 
     @* //[»] FOOTER |-----------|*|-----------| *@
+
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Mijn_CV - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - Opdracht Mijn CV voor Application Development : 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy</a>
         </div>
     </footer>
+
+    <!-- Privacy Bootstrap fade Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Privacy information</h5>
+                </div>
+                <div class="modal-body">
+                    There's no privacy.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK, I'll remember it</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     
     @* //[»] SCRIPTS |-----------|*|-----------| *@

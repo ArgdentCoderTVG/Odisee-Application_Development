@@ -16,8 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Odisee-Application_Development\Mijn CV\Mijn CV
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Mijn CV/Mijn CV/Views/Home/DevilFruit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXZpbEZydWl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Mijn CV/Mijn CV/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Mijn CV/Mijn CV/Views/Home/Luffy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMdWZmeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Mijn CV/Mijn CV/Views/Home/Sanji.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYW5qaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Mijn CV/Mijn CV/Views/Home/Zoro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxab3JvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Mijn CV/Mijn CV/Views/Shared/Error.cshtml]

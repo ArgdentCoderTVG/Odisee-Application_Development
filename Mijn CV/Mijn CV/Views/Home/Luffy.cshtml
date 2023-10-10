@@ -1,0 +1,47 @@
+﻿@model Mijn_CV.Models.ViewModels.LuffyViewModel
+@{
+    ViewData["Title"] = "Monkey D. Luffy the Fifth Emperor of the Sea!";
+}
+
+@functions {
+    public int CalculateAge(DateTime birthDate)
+    {
+        return (int)((DateTime.Now - birthDate).TotalDays / 365.25);
+    }
+}
+
+
+
+<table border="1" class="table mx-auto" style="width: 50%;">
+    <tbody>
+        <tr>
+            <th>Name</th>
+            <td>@Model.OnePieceCharacter?.Name</td>
+        </tr>
+        <tr>
+            <th>Epithet</th>
+            <td>@Model.OnePieceCharacter?.Epithet</td>
+        </tr>
+        <tr>
+            <th>Crew</th>
+            <td>@Model.OnePieceCharacter?.Crew</td>
+        </tr>
+        <tr>
+            <th>(Calculated) Age</th>
+            <td>@(Model.OnePieceCharacter?.BirthDate != null ? CalculateAge(Model.OnePieceCharacter.BirthDate) + " years" : "N/A")</td>
+
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>@Model.OnePieceCharacter?.Description</td>
+        </tr>
+        <tr>
+            <th>Image</th>
+            <td><img src="@Model.OnePieceCharacter?.ImageUrl" alt="@Model.OnePieceCharacter?.Name" width="100"></td>
+        </tr>
+        <tr>
+            <th>Wiki</th>
+            <td><a href="@Model.OnePieceCharacter?.WikiUrl">The wiki page</a></td>
+        </tr>
+    </tbody>
+</table>

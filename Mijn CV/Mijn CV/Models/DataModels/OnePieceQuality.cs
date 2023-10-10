@@ -1,4 +1,4 @@
-﻿namespace Mijn_CV.Models
+﻿namespace Mijn_CV.Models.DataModels
 {
     public class OnePieceQuality
     {
