@@ -1,4 +1,42 @@
-﻿@model Mijn_CV.Models.ViewModels.HomeViewModel
+﻿@* TODO 
+    - Footer sticks to content, must remain at the bottom
+    - Higher quality video for background in Home
+    - Image scaling for 6 One Piece Qualities so that they align
+    - Lots of code duplicated, better off centralised or unstructured/-readable
+    - Look into equivalent of conveying meaning in backend using methods, but then for frontend
+    - Bootstrap was used from memory, not consistently througout the project
+    - Possible engineering that common frameworks can also do (word clip over background image)
+    - Shake effect for homepage
+    - Enumerate all devil fruits (etc) into pages using fandom api?
+    - More statically coded stuff to the models instead of in the views
+    - Magic values throughout the project
+    - Remnants of either redo's or template stuff to be cleaned up
+    - How to properly mention the creator of f.e. images/videos/characters, frameworks and code snippets
+
+    DONE
+    - Transform template HTML to Razor CSHTML
+    - Fix template dependencies
+    - Adjust landing page visual components to atmosphere, hide then or move them out of the way
+    - A background image that gets the attention -> video
+    - Clipart logo or landingpage message
+    - Link to introductory video on onepiece
+    - Showcase of best onepiece features (story, awards, movies etc)
+    - No privacy joke
+    - throw out all template extras
+    - find images for everything
+    - Data models that hold data, no hardcoding
+    - Viewmodels
+    - Transplant OnePieceCharacters to Home (better than home atm)
+    - Create some character pages to satisfy 4-pages requirement
+    - Calculate the age of characters
+    - Add background music
+    - Have the introductory video play in the same window (framework?)
+    - Apply React styled components in razor equivalence (individual styling, scope = only that cshtml so no overlap style naming schemes)
+    - Have a devil fruit page
+    - Resolve muted music autoplay issue
+*@
+
+@model Mijn_CV.Models.ViewModels.HomeViewModel
 @{
     ViewData["Title"] = "Landing page";
 }
@@ -39,7 +77,12 @@
 
 @* Code section:  DYNAMIC CONTENT *@
 <div>
-    <!-- ======= Hero Section ======= -->
+    <!-- ======= Music ======= -->
+    <audio autoplay>
+        <source src="/sounds/one_piece-drums_of_liberation.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- ======= (template)Hero Section ======= -->
     <section id="hero">
         <video autoplay muted>
             <source src="/videos/kaido-flame-dragon-torch.mp4" type="video/mp4">
@@ -110,4 +153,3 @@
     <!-- Custom (extra) JS -->
     <script src="~/js/myCustomCode.js"></script>
 }
-
