@@ -1,0 +1,37 @@
+﻿@model Music_App.Models.ViewModels.AlbumViewModel
+@{
+    ViewData["Title"] = "Albums";
+}
+
+<div id="albumDisplay-test">
+    <table class="table mx-auto" style="width: 70%;">
+        <thead>
+            <tr>
+                <th>@nameof(Album.Rating)</th>
+                <th>@nameof(Album.Title)</th>
+                <th>@nameof(Album.Artist)</th>
+                <th>@nameof(Album.ImageURL)</th>
+                <th>@nameof(Album.Songs)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Album album in Model.Albums)
+            {
+                <tr>
+                    <td>@album.Rating.ToString()</td>
+                    <td>@album.Title</td>
+                    <td>@album.Artist</td>
+                    <td><img src="@album.ImageURL" alt="@album.Title" style="width: 100px; height: auto;"></td>
+                    <td>
+                        <ul>
+                            @foreach (Song song in album.Songs)
+                            {
+                                <li>@song.Title</li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

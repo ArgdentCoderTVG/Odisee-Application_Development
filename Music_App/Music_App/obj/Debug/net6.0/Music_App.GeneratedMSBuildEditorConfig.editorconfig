@@ -16,12 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Odisee-Application_Development\Music_App\Music_App
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Music_App/Music_App/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Music_App/Music_App/Views/Album/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Music_App/Music_App/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Music_App/Music_App/Views/Album/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Music_App/Music_App/Views/Shared/Error.cshtml]
