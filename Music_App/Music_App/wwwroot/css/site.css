@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* CSS styling for: Yellow rating stars (BEM CSS naming convention) */
+.ratingStar__color {
+    color: yellow;
+}

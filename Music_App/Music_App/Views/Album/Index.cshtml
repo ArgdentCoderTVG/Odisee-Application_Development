@@ -3,57 +3,63 @@
     ViewData["Title"] = "Albums";
 }
 
-<div id="albumDisplay-test">
-    <table class="table mx-auto" style="width: 70%;">
-        <thead>
-            <tr>
-                <th>@nameof(Album.Rating)</th>
-                <th>@nameof(Album.Title)</th>
-                <th>@nameof(Album.Artist)</th>
-                <th>@nameof(Album.ImageURL)</th>
-                <th>@nameof(Album.Songs)</th>
-            </tr>
-        </thead>
-        <tbody>
-            @* @try
-            { *@
-                @foreach (Album album in Model.Albums)
-                {
-                    <tr>
-                        <td>@album.Rating.ToString()</td>
-                        <td>@album.Title</td>
-                        <td>@album.Artist</td>
-                        <td><img src="@album.ImageURL" alt="@album.Title" style="width: 100px; height: auto;"></td>
-                        <td>
-                            <ul>
-                                @foreach (Song song in album.Songs)
-                                {
-                                    <li>@song.Title</li>
-                                }
-                            </ul>
-                        </td>
-                    </tr>
-                }
-            @* } *@
-            @* catch (NullReferenceException nullRefEx)
+@* Element for albums grid *@
+<div id="grid-@(ViewData["Title"])" class="container">
+
+    @* Element for albums grid title *@
+    <h1 id="grid_Title-@(ViewData["Title"])">Albums</h1>
+
+    @* Iterate over all albums *@
+    @for (int i = 0; i < Model.Albums.Count; i += 3)
+    {
+        @* Define(declare/initialise) three albums per row using LINQ *@
+        Album[] albumsPerRow = Model.Albums.Skip(i).Take(3).ToArray();
+
+        @* Element for albums row *@
+        <div id="row-@(ViewData["Title"])" class="row my-5 text-center">
+
+            @* Iterate over albums per parent LINQ result *@
+            @foreach (Album album in albumsPerRow)
             {
-                <div class="modal show" tabindex="-1" style="display: block;">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Error</h5>
+                @* Element for album column *@
+                <div id="column-@(album.Title)-@(album.Artist)" class="col-sm-4">
+
+                    @* Element for album card *@
+                    <div id="card-album-@(album.Title)-@(album.Artist)" class="card" style="width: 18rem;">
+
+                        @* Element for album image *@
+                        <img id="card-album-img-@(album.Title)-@(album.Artist)" class="card-img-top" src="@album.ImageURL" alt="Image of the album cover" onerror="this.src='/img/default_image.jpg'">
+
+                        @* Element for album body *@
+                        <div id="card-album-body-@(album.Title)-@(album.Artist)" class="card-body">
+
+                            @* Element for album Title/Artist *@
+                            <h5 id="card-album-title-@(album.Title)-@(album.Artist)" class="card-title mb-0">@album.Title</h5>
+                            <p id="card-album-artist-@(album.Title)-@(album.Artist)" class="card-text mt-0 fs-5">@album.Artist</p>
+
+                            @* Element for album rating *@
+                            <div class="small-ratings">
+                                @{
+                                    Func<int, bool> doesRatingWarrantNthStar = (j) => j <= album.Rating;
+                                    for (int j = 0; doesRatingWarrantNthStar(j); j++)
+                                    {
+                                        <i class="bi bi-star-fill ratingStar__color"></i>
+                                    }
+
+                                    Func<bool> doesRatingWarrantFinalHalfStar = () => (Math.Ceiling(album.Rating) - album.Rating) >= 0.5;
+                                    if (doesRatingWarrantFinalHalfStar())
+                                    {
+                                        <i class="bi bi-star-half ratingStar__color"></i>
+                                    }
+                                }
                             </div>
-                            <div class="modal-body">
-                                <p>@ViewData["ModalMessage"]</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
+
+                            @* Element for album details view*@
+                            <a class="btn btn-primary mt-2" asp-controller="Album" asp-action="AlbumDetails" asp-route-id="@album.Id">Details</a>
                         </div>
                     </div>
                 </div>
-                <div class="modal-backdrop show"></div>
-            } *@
-        </tbody>
-    </table>
+            }
+        </div>
+    }
 </div>
