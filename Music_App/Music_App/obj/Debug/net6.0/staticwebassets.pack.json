@@ -13,30 +13,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\ac_dc-back_in_black-album_image-2.jpg",
-      "PackagePath": "staticwebassets\\img\\ac_dc-back_in_black-album_image-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\ed_sheeran-X-album_image.jpg",
-      "PackagePath": "staticwebassets\\img\\ed_sheeran-X-album_image.jpg"
-    },
-    {
-      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\ed_sheeran-plus-album_image.jpg",
-      "PackagePath": "staticwebassets\\img\\ed_sheeran-plus-album_image.jpg"
-    },
-    {
-      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\shawn_colvin-a_few_small_repairs-album_image.jpg",
-      "PackagePath": "staticwebassets\\img\\shawn_colvin-a_few_small_repairs-album_image.jpg"
-    },
-    {
-      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\taylor_swift-1989-album_image.jpg",
-      "PackagePath": "staticwebassets\\img\\taylor_swift-1989-album_image.jpg"
-    },
-    {
-      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\the_greatest_showman-album_image.jpg",
-      "PackagePath": "staticwebassets\\img\\the_greatest_showman-album_image.jpg"
-    },
-    {
       "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

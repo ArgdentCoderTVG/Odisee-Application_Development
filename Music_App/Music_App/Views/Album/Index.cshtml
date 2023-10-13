@@ -15,23 +15,45 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (Album album in Model.Albums)
+            @* @try
+            { *@
+                @foreach (Album album in Model.Albums)
+                {
+                    <tr>
+                        <td>@album.Rating.ToString()</td>
+                        <td>@album.Title</td>
+                        <td>@album.Artist</td>
+                        <td><img src="@album.ImageURL" alt="@album.Title" style="width: 100px; height: auto;"></td>
+                        <td>
+                            <ul>
+                                @foreach (Song song in album.Songs)
+                                {
+                                    <li>@song.Title</li>
+                                }
+                            </ul>
+                        </td>
+                    </tr>
+                }
+            @* } *@
+            @* catch (NullReferenceException nullRefEx)
             {
-                <tr>
-                    <td>@album.Rating.ToString()</td>
-                    <td>@album.Title</td>
-                    <td>@album.Artist</td>
-                    <td><img src="@album.ImageURL" alt="@album.Title" style="width: 100px; height: auto;"></td>
-                    <td>
-                        <ul>
-                            @foreach (Song song in album.Songs)
-                            {
-                                <li>@song.Title</li>
-                            }
-                        </ul>
-                    </td>
-                </tr>
-            }
+                <div class="modal show" tabindex="-1" style="display: block;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Error</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>@ViewData["ModalMessage"]</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-backdrop show"></div>
+            } *@
         </tbody>
     </table>
 </div>

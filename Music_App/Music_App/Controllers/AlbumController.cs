@@ -25,24 +25,27 @@ namespace Music_App.Controllers
         // Index Controller Action
         public IActionResult Index()
         {
-            // Arranging the data
-            AlbumViewModel albumViewModel = FactoryAlbumViewModel();
+            // Defining output (declare + initialise)
+            AlbumViewModel albumViewModel = new AlbumViewModel { Albums = new AlbumRepository().GetAll() };
 
-            // Acting
+            // Returning output
             return View(albumViewModel);
         }
 
         // AlbumDetails Controller Action
         public IActionResult AlbumDetails(int albumId)
         {
-            // Arranging the data
-            // TODO: Nullcheck
-            Album? album = FactoryAlbumViewModel().Albums.Find(album => album.Id == albumId);
-            List<Song>? songs = album.Songs;
-            AlbumDetailsViewModel albumDetailsViewModel = new AlbumDetailsViewModel { Songs = songs };
+            // Defining repositories (declare + initialise)
+            AlbumRepository albumRepository = new AlbumRepository();
 
-            // Acting
-            return View(/*albumDetailsViewModel*/);
+            // Defining extracted output from repository
+            Album album = albumRepository.FindById(albumId);
+
+            // Defining output (declare + initialise)
+            AlbumDetailsViewModel albumDetailsViewModel = new AlbumDetailsViewModel { Album = album };
+
+            // Returning output
+            return View(albumDetailsViewModel);
         }
 
         // Privacy Controller Action

@@ -3,7 +3,7 @@
     public class AlbumDetailsViewModel
     {
         // Automatic properties -> simple POCO enumeration
-        public List<Song> Songs = new List<Song>();
+        public Album? Album { get; set; }
 
         // Default constructor -> Inialisation logic, Dependecy injection & Data validation are controller responasbility (SRP -> viewmodel -> only datacarrier)
     }

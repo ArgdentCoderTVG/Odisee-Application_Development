@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Odisee-Application_Development\Music_App\Music_App
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Music_App/Music_App/Views/Album/AlbumDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cQWxidW1EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/Music_App/Music_App/Views/Album/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
