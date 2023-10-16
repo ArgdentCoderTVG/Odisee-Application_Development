@@ -1,62 +1,78 @@
-﻿@model Music_App.Models.ViewModels.AlbumViewModel
+﻿@* 
+    Code effectively duplicated via comments (i know, code verbosity != comments) for self-inprovement purposes
+    Attempting to differentiate by heart between declare, initialise, both (define), implement (declare + {}) etc.
+
+    [INTENT] --> What's the intent of this code
+    [DESCR] --> What's the descriptive term for this code
+    [NOTE] --> What's (advanced and/or) technical about this code 
+*@
+
+@* [INTENT] Declare: viewmodel for this view via model-directive *@
+@model Music_App.Models.ViewModels.AlbumViewModel
+
+@* [INTENT] Initialise: Razor page ViewData title *@
 @{
     ViewData["Title"] = "Albums";
 }
 
-@* Element for albums grid *@
-<div id="grid-@(ViewData["Title"])" class="container">
+@* [DESCR] Element: album GUI root *@
+<div id="albums-root" class="container">
 
-    @* Element for albums grid title *@
-    <h1 id="grid_Title-@(ViewData["Title"])">Albums</h1>
+    @* [DESCR] Element: album GUI Title *@
+    <h1 id="albums_root-title">@ViewData["Title"]</h1>
 
-    @* Iterate over all albums *@
+    @* [INTENT] Iterate all albums *@
     @for (int i = 0; i < Model.Albums.Count; i += 3)
     {
-        @* Define(declare/initialise) three albums per row using LINQ *@
+        @* [DESCR] Define: three albums per row *@
         Album[] albumsPerRow = Model.Albums.Skip(i).Take(3).ToArray();
 
-        @* Element for albums row *@
-        <div id="row-@(ViewData["Title"])" class="row my-3 text-center">
+        @* [DESCR] Element: albums row *@
+        <div id="albums-row-@(albumsPerRow.Length)_albums" class="row my-3 text-center">
 
-            @* Iterate over albums per parent LINQ result *@
+            @* [INTENT] Iterate albums per row *@
             @foreach (Album album in albumsPerRow)
             {
-                @* Element for album column *@
-                <div id="column-@(album.Title)-@(album.Artist)" class="col-sm-4">
+                @* [DESCR] Element: albums columns-per-row *@
+                <div id="albums_row-column-@(album.Title)_@(album.Artist)" class="col-sm-4">
 
-                    @* Element for album card *@
-                    <div id="card-album-@(album.Title)-@(album.Artist)" class="card px-5 py-4" @* style="width: 18rem;" *@>
+                    @* [DESCR] Element: album card *@
+                    <div id="albums_row_column-card-@(album.Title)_@(album.Artist)" class="card px-5 py-4" @* style="width: 18rem;" *@>
 
-                        @* Element for album image *@
-                        <img id="card-album-img-@(album.Title)-@(album.Artist)" class="card-img-top" src="@album.ImageURL" alt="Image of the album cover" onerror="this.src='/img/default_image.jpg'">
+                        @* [DESCR] Element: album image *@
+                        <img id="albums_row_column_card-img-@(album.Title)_@(album.Artist)" class="card-img-top" src="@album.ImageURL" alt="Image of the album cover" onerror="this.src='/img/default_image.jpg'">
 
-                        @* Element for album body *@
-                        <div id="card-album-body-@(album.Title)-@(album.Artist)" class="card-body">
+                        @* [DESCR] Element: album info-container *@
+                        <div id="albums_row_column_card-info_container-@(album.Title)_@(album.Artist)" class="card-body">
 
-                            @* Element for album Title/Artist *@
-                            <h5 id="card-album-title-@(album.Title)-@(album.Artist)" class="card-title mb-0">@album.Title</h5>
-                            <p id="card-album-artist-@(album.Title)-@(album.Artist)" class="card-text mt-0 fs-5">@album.Artist</p>
+                            @* [DESCR] Element: album title *@
+                            <h5 id="albums_row_column_card_info_container-title-@(album.Title)_@(album.Artist)" class="card-title mb-0">@album.Title</h5>
 
-                            @* Element for album rating *@
-                            <div class="small-ratings">
+                            @* [DESCR] Element: album artist *@
+                            <p id="albums_row_column_card-info_container-artist-@(album.Title)_@(album.Artist)" class="card-text mt-0 fs-5">@album.Artist</p>
+
+                            @* [DESCR] Element: album rating *@
+                            <div id="albums_row_column_card-info_container-rating_container-@(album.Title)_@(album.Artist)" class="small-ratings">
                                 @{
+                                    @* [INTENT] awarding a full star per natural integer number *@
                                     Func<int, bool> doesRatingWarrantNthStar = (j) => j <= album.Rating;
                                     for (int j = 1; doesRatingWarrantNthStar(j); j++)
                                     {
-                                        <i class="bi bi-star-fill ratingStar__color"></i>
+                                        <i id="albums_row_column_card-info_container_rating_container-star_@j-@(album.Title)_@(album.Artist)" class="bi bi-star-fill ratingStar__color"></i>
                                     }
 
+                                    @* [INTENT] awarding a final half star to a fractional part that's at least 0.5 *@
                                     Func<bool> doesRatingHaveFractionalPart = () => (album.Rating % 1 != 0);
                                     Func<bool> doesRatingWarrantFinalHalfStar = () => (Math.Ceiling(album.Rating) - album.Rating) <= 0.5;
                                     if (doesRatingHaveFractionalPart() && doesRatingWarrantFinalHalfStar())
                                     {
-                                        <i class="bi bi-star-half ratingStar__color"></i>
+                                        <i id="albums_row_column_card-info_container_rating_container-half_star-@(album.Title)_@(album.Artist)" class="bi bi-star-half ratingStar__color"></i>
                                     }
                                 }
                             </div>
 
-                            @* Element for album details view*@
-                            <a class="btn btn-primary mt-2" asp-controller="Album" asp-action="AlbumDetails" asp-route-albumId="@album.Id">Details</a>
+                            @* [DESCR] Element: dynamic link to album details *@
+                            <a id="albums_row_column_card-info_container-details_link-@(album.Title)_@(album.Artist)" class="btn btn-primary mt-2" asp-controller="Album" asp-action="AlbumDetails" asp-route-albumId="@album.Id">Details</a>
                         </div>
                     </div>
                 </div>

@@ -5,60 +5,90 @@ using System.Diagnostics;
 
 namespace Music_App.Controllers
 {
-    /* TODO:
-     * - Fetch albums, songs and images from spotify api
-     * - Convert string 4:10 to seconds instead of meaningless calculation
-     * - Use factory pattern for indexViewModel initialisation
-     */
-
     public class AlbumController : Controller
     {
-        // Logger backing variable definition (declare & initialise)
+        #region Note to Reader
+        
+        // Code effectively duplicated via comments (i know, code verbosity != comments) for self-inprovement purposes
+        // Attempting to differentiate by heart between declare, initialise, both (define), implement (declare + {}) etc.
+
+        // [INTENT] --> What's the intent of this code
+        // [DESCR] --> What's the descriptive term for this code
+        // [NOTE] --> What's (advanced and/or) technical about this code
+
+        #endregion
+
+        #region Instance Variables
+
+        // [INTENT] Declare: backing variable for logger
         private readonly ILogger<AlbumController> _logger;
 
-        // Constructor (argumented)
+        #endregion
+
+        #region Properties
+
+        // [INTENT] Define: automatic property for repository (I want all to use same repo)
+        public AlbumRepository LocalAlbumRepository { get; private set; }
+
+        #endregion
+
+        #region Constructor
+
+        // [DESCR] Constructor (argumented)
         public AlbumController(ILogger<AlbumController> logger)
         {
+            // Initialise: instance variable values
             _logger = logger;
+
+            // Initialise: instance property values
+            LocalAlbumRepository = new AlbumRepository();
         }
 
-        // Index Controller Action
+        #endregion
+
+        #region Controller Actions
+
+        // [DESCR] Index Controller Action
         public IActionResult Index()
         {
-            // Defining output (declare + initialise)
-            AlbumViewModel albumViewModel = new AlbumViewModel { Albums = new AlbumRepository().GetAll() };
+            // Define: viewmodel via object initialiser
+            AlbumViewModel albumViewModel = new AlbumViewModel { Albums = LocalAlbumRepository.GetAll() };
 
-            // Returning output
+            // Delivery: passing viewmodel to view
             return View(albumViewModel);
         }
 
-        // AlbumDetails Controller Action
+        // [DESCR] AlbumDetails Controller Action
         public IActionResult AlbumDetails(int albumId)
         {
-            // Defining repositories (declare + initialise)
-            AlbumRepository albumRepository = new AlbumRepository();
+            // Define: album as repo id-filtering result
+            Album album = LocalAlbumRepository.FindById(albumId);
 
-            // Defining extracted output from repository
-            Album album = albumRepository.FindById(albumId);
-
-            // Defining output (declare + initialise)
+            // Define: viewmodel via object initialiser
             AlbumDetailsViewModel albumDetailsViewModel = new AlbumDetailsViewModel { Album = album };
 
-            // Returning output
+            // Delivery: passing viewmodel to view
             return View(albumDetailsViewModel);
         }
 
-        // Privacy Controller Action
+        // [DESCR] Privacy Controller Action
         public IActionResult Privacy()
         {
             return View();
         }
 
-        // Error Controller Action (for non-cache erroneous content handling; Activity ID provided by System.Diagnostics tracing)
+        // [DESCR] Error Controller Action 
+        // [NOTE] for non-cache erroneous content handling via C# attribute; Activity ID provided by System.Diagnostics tracing
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            // Define: viewmodel via object initialiser
+            ErrorViewModel errorViewModel = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
+
+            // Delivery: passing viewmodel to view
+            return View(errorViewModel);
         }
+
+        #endregion
     }
 }
