@@ -72,6 +72,7 @@ namespace Music_App.Controllers
         }
 
         // [DESCR] Privacy Controller Action
+        // [NOTE TO READER] Present in assigment examples, not deleted.
         public IActionResult Privacy()
         {
             return View();
@@ -79,6 +80,7 @@ namespace Music_App.Controllers
 
         // [DESCR] Error Controller Action 
         // [NOTE] for non-cache erroneous content handling via C# attribute; Activity ID provided by System.Diagnostics tracing
+        // [NOTE TO READER] Useful action, not deleted.
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -1,10 +1,10 @@
-﻿@* 
+﻿@*
     Code effectively duplicated via comments (i know, code verbosity != comments) for self-inprovement purposes
     Attempting to differentiate by heart between declare, initialise, both (define), implement (declare + {}) etc.
 
     [INTENT] --> What's the intent of this code
     [DESCR] --> What's the descriptive term for this code
-    [NOTE] --> What's (advanced and/or) technical about this code 
+    [NOTE] --> What's (advanced and/or) technical about this code
 *@
 
 @* [INTENT] Declare: viewmodel for this view via model-directive *@
@@ -17,7 +17,6 @@
 
 @* [DESCR] Element: album GUI root *@
 <div id="albums-root" class="container">
-
     @* [DESCR] Element: album GUI Title *@
     <h1 id="albums_root-title">@ViewData["Title"]</h1>
 
@@ -29,50 +28,41 @@
 
         @* [DESCR] Element: albums row *@
         <div id="albums-row-@(albumsPerRow.Length)_albums" class="row my-3 text-center">
-
             @* [INTENT] Iterate albums per row *@
             @foreach (Album album in albumsPerRow)
             {
                 @* [DESCR] Element: albums columns-per-row *@
-                <div id="albums_row-column-@(album.Title)_@(album.Artist)" class="col-sm-4">
-
+                <div id="albums_row-column-@(album.Title.Replace(" ", "_"))_@(album.Artist.Replace(" ", "_"))" class="col-sm-4">
                     @* [DESCR] Element: album card *@
-                    <div id="albums_row_column-card-@(album.Title)_@(album.Artist)" class="card px-5 py-4" @* style="width: 18rem;" *@>
-
+                    <div id="albums_row_column-card-@(album.Title.Replace(" ", "_"))_@(album.Artist.Replace(" ", "_"))" class="card px-5 py-4">
                         @* [DESCR] Element: album image *@
-                        <img id="albums_row_column_card-img-@(album.Title)_@(album.Artist)" class="card-img-top" src="@album.ImageURL" alt="Image of the album cover" onerror="this.src='/img/default_image.jpg'">
-
+                        <img id="albums_row_column_card-img-@(album.Title.Replace(" ", "_"))_@(album.Artist.Replace(" ", "_"))" class="card-img-top" src="@album.ImageURL" alt="Image of the album cover" onerror="this.src='/img/default_image.jpg'">
                         @* [DESCR] Element: album info-container *@
-                        <div id="albums_row_column_card-info_container-@(album.Title)_@(album.Artist)" class="card-body">
-
+                        <div id="albums_row_column_card-info_container-@(album.Title.Replace(" ", "_"))_@(album.Artist.Replace(" ", "_"))" class="card-body">
                             @* [DESCR] Element: album title *@
-                            <h5 id="albums_row_column_card_info_container-title-@(album.Title)_@(album.Artist)" class="card-title mb-0">@album.Title</h5>
-
+                            <h5 id="albums_row_column_card_info_container-title-@(album.Title.Replace(" ", "_"))_@(album.Artist.Replace(" ", "_"))" class="card-title mb-0">@album.Title</h5>
                             @* [DESCR] Element: album artist *@
-                            <p id="albums_row_column_card-info_container-artist-@(album.Title)_@(album.Artist)" class="card-text mt-0 fs-5">@album.Artist</p>
-
+                            <p id="albums_row_column_card-info_container-artist-@(album.Title.Replace(" ", "_"))_@(album.Artist.Replace(" ", "_"))" class="card-text mt-0 fs-5">@album.Artist</p>
                             @* [DESCR] Element: album rating *@
-                            <div id="albums_row_column_card-info_container-rating_container-@(album.Title)_@(album.Artist)" class="small-ratings">
+                            <div id="albums_row_column_card-info_container-rating_container-@(album.Title.Replace(" ", "_"))_@(album.Artist.Replace(" ", "_"))" class="small-ratings">
                                 @{
                                     @* [INTENT] awarding a full star per natural integer number *@
                                     Func<int, bool> doesRatingWarrantNthStar = (j) => j <= album.Rating;
                                     for (int j = 1; doesRatingWarrantNthStar(j); j++)
                                     {
-                                        <i id="albums_row_column_card-info_container_rating_container-star_@j-@(album.Title)_@(album.Artist)" class="bi bi-star-fill ratingStar__color"></i>
+                                        <i id="albums_row_column_card-info_container_rating_container-star_@j-@(album.Title.Replace(" ", "_"))_@(album.Artist.Replace(" ", "_"))" class="bi bi-star-fill ratingStar__color"></i>
                                     }
-
                                     @* [INTENT] awarding a final half star to a fractional part that's at least 0.5 *@
                                     Func<bool> doesRatingHaveFractionalPart = () => (album.Rating % 1 != 0);
                                     Func<bool> doesRatingWarrantFinalHalfStar = () => (Math.Ceiling(album.Rating) - album.Rating) <= 0.5;
                                     if (doesRatingHaveFractionalPart() && doesRatingWarrantFinalHalfStar())
                                     {
-                                        <i id="albums_row_column_card-info_container_rating_container-half_star-@(album.Title)_@(album.Artist)" class="bi bi-star-half ratingStar__color"></i>
+                                        <i id="albums_row_column_card-info_container_rating_container-half_star-@(album.Title.Replace(" ", "_"))_@(album.Artist.Replace(" ", "_"))" class="bi bi-star-half ratingStar__color"></i>
                                     }
                                 }
                             </div>
-
                             @* [DESCR] Element: dynamic link to album details *@
-                            <a id="albums_row_column_card-info_container-details_link-@(album.Title)_@(album.Artist)" class="btn btn-primary mt-2" asp-controller="Album" asp-action="AlbumDetails" asp-route-albumId="@album.Id">Details</a>
+                            <a id="albums_row_column_card-info_container-details_link-@(album.Title.Replace(" ", "_"))_@(album.Artist.Replace(" ", "_"))" class="btn btn-primary mt-2" asp-controller="Album" asp-action="AlbumDetails" asp-route-albumId="@album.Id">Details</a>
                         </div>
                     </div>
                 </div>

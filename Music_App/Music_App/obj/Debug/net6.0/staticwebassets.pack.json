@@ -9,20 +9,12 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
       "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\default_image.jpg",
       "PackagePath": "staticwebassets\\img\\default_image.jpg"
     },
     {
       "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\no_privacy.jpg",
       "PackagePath": "staticwebassets\\img\\no_privacy.jpg"
-    },
-    {
-      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\lib\\bootstrap\\LICENSE",

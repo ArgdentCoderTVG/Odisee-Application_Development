@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wKfgbLCa4E4dcKXjsR/HYykTbq6igCTe258+Slhhci0=",
+  "Hash": "L1lk3G3hI6xv7dZk2xD7sNbDFhtrSk2RKPkyxsD0+AA=",
   "Source": "Music_App",
   "BasePath": "_content/Music_App",
   "Mode": "Default",
@@ -68,23 +68,6 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\favicon.ico",
-      "SourceId": "Music_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\",
-      "BasePath": "_content/Music_App",
-      "RelativePath": "favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
       "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\default_image.jpg",
       "SourceId": "Music_App",
       "SourceType": "Discovered",
@@ -117,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\no_privacy.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\js\\site.js",
-      "SourceId": "Music_App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\",
-      "BasePath": "_content/Music_App",
-      "RelativePath": "js/site.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
