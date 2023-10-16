@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "owSF3wnEysqud3cfnhUCeOilSqplr5at75b2Y4TJRbg=",
+  "Hash": "wKfgbLCa4E4dcKXjsR/HYykTbq6igCTe258+Slhhci0=",
   "Source": "Music_App",
   "BasePath": "_content/Music_App",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\default_image.jpg",
+      "SourceId": "Music_App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\",
+      "BasePath": "_content/Music_App",
+      "RelativePath": "img/default_image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\default_image.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\img\\no_privacy.jpg",
+      "SourceId": "Music_App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\",
+      "BasePath": "_content/Music_App",
+      "RelativePath": "img/no_privacy.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\no_privacy.jpg"
     },
     {
       "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\Music_App\\Music_App\\wwwroot\\js\\site.js",

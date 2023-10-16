@@ -16,7 +16,7 @@
         Album[] albumsPerRow = Model.Albums.Skip(i).Take(3).ToArray();
 
         @* Element for albums row *@
-        <div id="row-@(ViewData["Title"])" class="row my-5 text-center">
+        <div id="row-@(ViewData["Title"])" class="row my-3 text-center">
 
             @* Iterate over albums per parent LINQ result *@
             @foreach (Album album in albumsPerRow)
@@ -25,7 +25,7 @@
                 <div id="column-@(album.Title)-@(album.Artist)" class="col-sm-4">
 
                     @* Element for album card *@
-                    <div id="card-album-@(album.Title)-@(album.Artist)" class="card" style="width: 18rem;">
+                    <div id="card-album-@(album.Title)-@(album.Artist)" class="card px-5 py-4" @* style="width: 18rem;" *@>
 
                         @* Element for album image *@
                         <img id="card-album-img-@(album.Title)-@(album.Artist)" class="card-img-top" src="@album.ImageURL" alt="Image of the album cover" onerror="this.src='/img/default_image.jpg'">
@@ -41,13 +41,14 @@
                             <div class="small-ratings">
                                 @{
                                     Func<int, bool> doesRatingWarrantNthStar = (j) => j <= album.Rating;
-                                    for (int j = 0; doesRatingWarrantNthStar(j); j++)
+                                    for (int j = 1; doesRatingWarrantNthStar(j); j++)
                                     {
                                         <i class="bi bi-star-fill ratingStar__color"></i>
                                     }
 
-                                    Func<bool> doesRatingWarrantFinalHalfStar = () => (Math.Ceiling(album.Rating) - album.Rating) >= 0.5;
-                                    if (doesRatingWarrantFinalHalfStar())
+                                    Func<bool> doesRatingHaveFractionalPart = () => (album.Rating % 1 != 0);
+                                    Func<bool> doesRatingWarrantFinalHalfStar = () => (Math.Ceiling(album.Rating) - album.Rating) <= 0.5;
+                                    if (doesRatingHaveFractionalPart() && doesRatingWarrantFinalHalfStar())
                                     {
                                         <i class="bi bi-star-half ratingStar__color"></i>
                                     }
@@ -55,7 +56,7 @@
                             </div>
 
                             @* Element for album details view*@
-                            <a class="btn btn-primary mt-2" asp-controller="Album" asp-action="AlbumDetails" asp-route-id="@album.Id">Details</a>
+                            <a class="btn btn-primary mt-2" asp-controller="Album" asp-action="AlbumDetails" asp-route-albumId="@album.Id">Details</a>
                         </div>
                     </div>
                 </div>
