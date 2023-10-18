@@ -1,0 +1,88 @@
+﻿@*
+    Code effectively duplicated via comments (i know, code verbosity != comments) for self-inprovement purposes
+    Attempting to differentiate by heart between declare, initialise, both (define), implement (declare + {}) etc.
+
+    [INTENT] --> What's the intent of this code
+    [DESCR] --> What's the descriptive term for this code
+    [NOTE] --> What's (advanced and/or) technical about this code
+*@
+
+@* [INTENT] Declare: CultureInfo from System.Globalization via using-directive *@
+@using System.Globalization;
+
+@* [INTENT] Declare: viewmodel for this view via model-directive *@
+@model Music_App.Models.ViewModels.AlbumDetailsViewModel
+
+@* [INTENT] Initialise: Razor page ViewData title *@
+@{
+    ViewData["Title"] = $"Album_details";
+}
+
+@* [DESCR] Element: songs GUI Root *@
+<div id="songs-root-@(Model.Album.Title.Replace(" ", "_"))" class="container">
+
+    @* [DESCR] Element: songs GUI Title *@
+    <h2 id="songs_root-title-@(Model.Album.Title.Replace(" ", "_"))">@(Model.Album.Title)</h2>
+
+    @* [DESCR] Element: songs info Container *@
+    <div id="songs_root-info_container" class="d-flex mb-3">
+
+        @* [DESCR] Element: album Image *@
+        <img id="songs_info_container-img-@(Model.Album.Title.Replace(" ", "_"))" class="img-fluid" style="max-width:100px" src="@Model.Album.ImageURL" alt="Image of the album cover" onerror="this.src='/img/default_image.jpg'">
+        
+        @* [DESCR] Element: songs info text container*@
+        <div id="songs_info_container-text_container-@(Model.Album.Title.Replace(" ", "_"))" class="d-flex flex-column justify-content-between mx-3">
+            
+            @* [DESCR] Element: songs info Title *@
+            <p id="songs_info_container_text_container-Title-@(Model.Album.Title.Replace(" ", "_"))" class="m-0">
+                <strong id="songs_info_container_text_container-Title_Emphasis-@(Model.Album.Title.Replace(" ", "_"))" class="m-0">Title:</strong>
+                @Model.Album.Title
+            </p>
+            
+            @* [DESCR] Element: songs info Artist *@
+            <p id="songs_info_container_text_container-Artist-@(Model.Album.Title.Replace(" ", "_"))" class="m-0">
+                <strong id="songs_info_container_text_container-Artist_Emphasis-@(Model.Album.Title.Replace(" ", "_"))" class="m-0">Artist:</strong>
+                @Model.Album.Artist
+            </p>
+            
+            @* [DESCR] Element: songs info Rating *@
+            <p id="songs_info_container_text_container-Rating-@(Model.Album.Title.Replace(" ", "_"))" class="m-0">
+                <strong id="songs_info_container_text_container-Rating_Emphasis-@(Model.Album.Title.Replace(" ", "_"))" class="m-0">Rating:</strong>
+                 @Model.Album.Rating.ToString(new CultureInfo("fr-BE")) / 5
+            </p>
+        </div>
+    </div>
+
+    @* [DESCR] Element: songs Listgroup *@
+    <ul id="songs_root-listgroup-@(Model.Album.Title.Replace(" ", "_"))" class="list-group">
+
+        @* [INTENT] Iterate all songs *@
+        @for (int i = 0; i < Model.Album.Songs.Count; i++)
+        {
+            @* [INTENT] Define: current song *@
+            Song currentSong = Model.Album.Songs[i];
+
+            @* [INTENT] Define: preferred song length notation *@
+            String secondsToStringified = $"{currentSong.Length / 60}:{(currentSong.Length % 60).ToString("D2")}";
+
+            @* [DESCR] Element: songs listgroup Item *@
+            <li id="songs_root_listgroup-item-@(Model.Album.Title.Replace(" ", "_"))" class="list-group-item border-0 border-bottom">
+
+                @* [DESCR] Element: song row *@
+                <div id="songs_root_listgroup_item-row-@(Model.Album.Title.Replace(" ", "_"))" class="row">
+
+                    @* [DESCR] Element: song title column-per-row *@
+                    <div id="songs_root_listgroup_item_row-colum_title-@(Model.Album.Title.Replace(" ", "_"))" class="col-sm-10">
+
+                        @* [DESCR] Element: song listgroup item icon *@
+                        <i id="songs_root_listgroup_item_row_colum_title-icon-@(Model.Album.Title.Replace(" ", "_"))" class="bi bi-music-note-list"></i>
+                        @currentSong.Title
+                    </div>
+
+                    @* [DESCR] Element: song length column-per-row *@
+                    <div id="songs_root_listgroup_item_row-colum_length-@(Model.Album.Title.Replace(" ", "_"))" class="col-sm-2">@secondsToStringified</div>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
