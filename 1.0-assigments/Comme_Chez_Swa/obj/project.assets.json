@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\odisee-AD-CommeChezSoi_repo\\Comme_Chez_Swa\\Comme Chez Swa.csproj",
+      "projectUniqueName": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\Comme Chez Swa.csproj",
       "projectName": "Comme Chez Swa",
-      "projectPath": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\odisee-AD-CommeChezSoi_repo\\Comme_Chez_Swa\\Comme Chez Swa.csproj",
+      "projectPath": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\Comme Chez Swa.csproj",
       "packagesPath": "C:\\Users\\tibov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\odisee-AD-CommeChezSoi_repo\\Comme_Chez_Swa\\obj\\",
+      "outputPath": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tibov\\AppData\\Roaming\\NuGet\\NuGet.Config",

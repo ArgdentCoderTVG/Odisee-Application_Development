@@ -16,9 +16,11 @@
 }
 
 @* [DESCR] Element: album GUI root *@
-<div id="restaurant-root" class="container">
-    <div id="restaurant_root-contentContainer" class="d-flex flex-column">
-        <img src="@Model.RestaurantLogoSource" alt="Description of image">
+<div id="home-root" class="container">
+    <div id="home_root-contentContainer" class="d-flex flex-column">
+        <img src="@Model.RestaurantLogoSource" title="Comme Chez Soi" alt="Comme Chez Soi Restaurant Logo Image"
+        class="img-fluid rounded" role="img" loading="lazy" width="" height="" @* Should be some golden ratio, relative to 1080x1920 and the actual size*@
+             onerror="this.onerror=null; this.src='/path/to/your/placeholder-image.jpg'">
         <h1 id="">@Model.DynamicGreetingText</h1>
     </div>
 </div>
