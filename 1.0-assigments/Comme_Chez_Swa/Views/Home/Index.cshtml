@@ -16,11 +16,28 @@
 }
 
 @* [DESCR] Element: album GUI root *@
+@* [NOTE] Bootstrap img-fluid governs image aspect ratio, native HTML width governs scale  *@
 <div id="home-root" class="container">
-    <div id="home_root-contentContainer" class="d-flex flex-column">
-        <img src="@Model.RestaurantLogoSource" title="Comme Chez Soi" alt="Comme Chez Soi Restaurant Logo Image"
-        class="img-fluid rounded" role="img" loading="lazy" width="" height="" @* Should be some golden ratio, relative to 1080x1920 and the actual size*@
-             onerror="this.onerror=null; this.src='/path/to/your/placeholder-image.jpg'">
-        <h1 id="">@Model.DynamicGreetingText</h1>
+    <div id="home_root-contentContainer" class="d-flex flex-column align-items-center">
+        <img id="contentContainer-Logo"
+             src="@Model.RestaurantLogoSource" title="Comme Chez Soi Logo"
+             alt="Large image of Restaurant &quot;Comme Chez Swa&quot;"
+             class="img-fluid rounded" role="img" loading="lazy" width="300"
+             onerror="this.onerror=null; this.src='/img/image_not_found.jpg'">
+        <h1 id="contentContainer-Greeting" class="mt-2">@Model.DynamicGreetingText</h1>
+        <p id="contentContainer-MenuLink">
+            @{
+                string input = Model.DynamicMenuText.FullText;
+                string placeholder = Model.DynamicMenuText.LinkedTextPlaceholder;
+                int placeholderIndex = input.IndexOf(placeholder);
+                
+                string beforeLinkedText = input.Substring(0, placeholderIndex);
+                string afterLinkedText = input.Substring(placeholderIndex + placeholder.Length);
+            }
+
+            @beforeLinkedText
+            <a class="text-secondary">@Model.DynamicMenuText.LinkedText</a>
+            @afterLinkedText
+            </p>
     </div>
 </div>

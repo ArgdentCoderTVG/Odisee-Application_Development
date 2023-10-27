@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C0q2Jx5K6r1Uuh2MWQv60td82Cx/TBFc5dbIIP2HmOo=",
+  "Hash": "Woz6zd8I1VOiYfL6ROW+qkQ2CYU8UD40LNbXuXkgWTE=",
   "Source": "Comme Chez Swa",
   "BasePath": "_content/Comme Chez Swa",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\img\\image_not_found.jpg",
+      "SourceId": "Comme Chez Swa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\",
+      "BasePath": "_content/Comme Chez Swa",
+      "RelativePath": "img/image_not_found.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image_not_found.jpg"
     },
     {
       "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\img\\logo_comme_chez_swa.png",

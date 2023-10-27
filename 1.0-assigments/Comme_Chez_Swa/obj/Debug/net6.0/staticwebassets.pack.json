@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\img\\image_not_found.jpg",
+      "PackagePath": "staticwebassets\\img\\image_not_found.jpg"
+    },
+    {
       "Id": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\img\\logo_comme_chez_swa.png",
       "PackagePath": "staticwebassets\\img\\logo_comme_chez_swa.png"
     },

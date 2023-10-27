@@ -1,0 +1,28 @@
+﻿@*
+    Code effectively duplicated via comments (i know, code verbosity != comments) for self-inprovement purposes
+    Attempting to differentiate by heart between declare, initialise, both (define), implement (declare + {}) etc.
+
+    [INTENT] --> What's the intent of this code
+    [DESCR] --> What's the descriptive term for this code
+    [NOTE] --> What's (advanced and/or) technical about this code
+*@
+
+@* [INTENT] Declare: viewmodel for this view via model-directive *@
+@model Comme_Chez_Swa.Models.Home.IndexViewModel
+
+@* [INTENT] Initialise: Razor page ViewData title *@
+@{
+    ViewData["Title"] = "Comme Chez Soi";
+}
+
+@* [DESCR] Element: album GUI root *@
+@* [NOTE] Bootstrap img-fluid governs image aspect ratio, native HTML width governs scale  *@
+<div id="home-root" class="container">
+    <div id="home_root-contentContainer" class="d-flex flex-column">
+        @* [TEMPLATE] Image element *@
+        <img src="@Model.RestaurantLogoSource" title="Comme Chez Soi Logo" alt="Large image of Restaurant &quot;Comme Chez Swa&quot;"
+        class="img-fluid rounded" role="img" loading="lazy" width="300"
+             onerror="this.onerror=null; this.src='/img/image_not_found.jpg'">
+        <h1 id="">@Model.DynamicGreetingText</h1>
+    </div>
+</div>
