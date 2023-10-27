@@ -1,0 +1,37 @@
+/* Given or initial styling */
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* Making the view root take up all available space from html*/
+html {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+body {
+    flex-grow: 1 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+body > div.container {
+    flex-grow: 1;
+}

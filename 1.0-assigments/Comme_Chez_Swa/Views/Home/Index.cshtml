@@ -1,0 +1,24 @@
+﻿@*
+    Code effectively duplicated via comments (i know, code verbosity != comments) for self-inprovement purposes
+    Attempting to differentiate by heart between declare, initialise, both (define), implement (declare + {}) etc.
+
+    [INTENT] --> What's the intent of this code
+    [DESCR] --> What's the descriptive term for this code
+    [NOTE] --> What's (advanced and/or) technical about this code
+*@
+
+@* [INTENT] Declare: viewmodel for this view via model-directive *@
+@model Comme_Chez_Swa.Models.Home.IndexViewModel
+
+@* [INTENT] Initialise: Razor page ViewData title *@
+@{
+    ViewData["Title"] = "Comme Chez Soi";
+}
+
+@* [DESCR] Element: album GUI root *@
+<div id="restaurant-root" class="container">
+    <div id="restaurant_root-contentContainer" class="d-flex flex-column">
+        <img src="@Model.RestaurantLogoSource" alt="Description of image">
+        <h1 id="">@Model.DynamicGreetingText</h1>
+    </div>
+</div>
