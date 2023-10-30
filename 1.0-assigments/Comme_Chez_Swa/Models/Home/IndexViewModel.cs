@@ -5,9 +5,7 @@ namespace Comme_Chez_Swa.Models.Home
     // [NOTE] POCO with data integrity focus, solely instanced/manipulated using constructor (instance state is always intial state)
     public class IndexViewModel : BaseViewModel
     {
-        public string DynamicGreetingText { get; }
-        public MenuTextWithPageLinkMVC DynamicMenuText { get; }
-        public string RestaurantLogoSource { get; }
+        public DynamicMenuContent DynamicMenuContent { get; }
 
         // [NOTE] One entry point for altering the object state
         /* [NOTE] Choice: - either have an instance argument - OR - input arguments for creating the instance here -
@@ -31,11 +29,9 @@ namespace Comme_Chez_Swa.Models.Home
          *      A method should be monadic, dyadic and at the very most triadic. (amount of parameters) Anything more points to a method doing too much of 1 thing, or more than 1 thing.
          */
 
-        public IndexViewModel(string dynamicGreetingText, MenuTextWithPageLinkMVC dynamicMenuText, string restaurantLogoSource)
+        public IndexViewModel(DynamicMenuContent dynamicMenuText)
         {
-            DynamicMenuText = dynamicMenuText;
-            DynamicGreetingText = dynamicGreetingText;
-            RestaurantLogoSource = restaurantLogoSource;
+            DynamicMenuContent = dynamicMenuText;
         }
     }
 }

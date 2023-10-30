@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\odisee-AD-MusicApp_repo\\Music_App\\Music_App.csproj": {}
+    "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Music_App\\Music_App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\odisee-AD-MusicApp_repo\\Music_App\\Music_App.csproj": {
+    "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Music_App\\Music_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\odisee-AD-MusicApp_repo\\Music_App\\Music_App.csproj",
+        "projectUniqueName": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Music_App\\Music_App.csproj",
         "projectName": "Music_App",
-        "projectPath": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\odisee-AD-MusicApp_repo\\Music_App\\Music_App.csproj",
+        "projectPath": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Music_App\\Music_App.csproj",
         "packagesPath": "C:\\Users\\tibov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\2.1-Lessen-Y2Q1\\Application_Development\\Application-Development\\Odisee-Application_Development\\odisee-AD-MusicApp_repo\\Music_App\\obj\\",
+        "outputPath": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Music_App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tibov\\AppData\\Roaming\\NuGet\\NuGet.Config",

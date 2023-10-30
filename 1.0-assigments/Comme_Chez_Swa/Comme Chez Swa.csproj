@@ -7,4 +7,12 @@
     <RootNamespace>Comme_Chez_Swa</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Templates.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Templates.txt" />
+  </ItemGroup>
+
 </Project>
