@@ -1,23 +1,9 @@
-﻿@using System.Text.Json;
-@*
-    Code effectively duplicated via comments (i know, code verbosity != comments) for self-inprovement purposes
-    Attempting to differentiate by heart between declare, initialise, both (define), implement (declare + {}) etc.
-
-    [INTENT] --> What's the intent of this code
-    [DESCR] --> What's the descriptive term for this code
-    [NOTE] --> What's (advanced and/or) technical about this code
-*@
-
-@* [INTENT] Declare: viewmodel for this view via model-directive *@
-@model Comme_Chez_Swa.Models.Home.IndexViewModel
-
-@* [INTENT] Initialise: Razor page ViewData title *@
-@{
-    ViewData["Title"] = "Comme Chez Soi";
+﻿@section Styles {
+    <link rel="stylesheet" href="~/css/index_Style.css">
 }
 
-@* [DESCR] Element: album GUI root *@
-@* [NOTE] Bootstrap img-fluid governs image aspect ratio, native HTML width governs scale  *@
+@using System.Text.Json;
+@model Comme_Chez_Swa.Models.Home.IndexViewModel
 
 @{
     Dictionary<string, object>? imageConfigInstance = ViewData["ImageConfig"] as Dictionary<string, object>;
@@ -25,30 +11,30 @@
 
     if (imageConfigInstance != null)
     {
-        logoPath = imageConfigInstance["logo"] as string;
+        logoPath = imageConfigInstance["commeChezSwaLogo"] as string;
     }
 }
 
 
 <div id="home-root" class="container">
-    <div id="home_root-contentContainer" class="d-flex flex-column align-items-center">
+    <div id="home_root-menuContainer" class="d-flex flex-column align-items-center">
 
-        <img id="contentContainer-Logo"
+        <img id="menuContainer-Logo"
              src="@logoPath" title="Comme Chez Soi Logo"
              alt="Large image of Restaurant &quot;Comme Chez Swa&quot;"
              class="img-fluid rounded" role="img" loading="lazy" width="300"
              onerror="this.onerror=null; this.src='/img/image_not_found.jpg'">
 
-        <h1 id="contentContainer-Greeting" class="mt-2">@Model.DynamicMenuContent.GeneratedGreetingType</h1>
+        <h1 id="menuContainer-Greeting" class="mt-2">@Model.TimeBasedMenuContentObject.TimeBasedGreetingType</h1>
 
-        <p id="contentContainer-MenuLink">
-            @Model.DynamicMenuContent.PartBeforeLinkElementText
+        <p id="menuContainer-MenuLink">
+            @Model.TimeBasedMenuContentObject.TextBeforeTimeBasedMenuName
             <a id="home_root_contentContainer-MenuLink"
-               class="mt-2"
-               asp-controller=@Model.DynamicMenuContent.NameOfControllerMVC
-               asp-action=@Model.DynamicMenuContent.NameOfActionMVC
-               asp-route-menuType=@Model.DynamicMenuContent.GeneratedMenuType>@Model.DynamicMenuContent.GeneratedMenuType</a>
-            @Model.DynamicMenuContent.PartAfterLinkElementText
+               class="mt-2 menuLink"
+               asp-controller=@Model.TimeBasedMenuContentObject.MenuControllerName
+               asp-action=@Model.TimeBasedMenuContentObject.MenuControllerActionName
+               asp-route-menuType=@Model.TimeBasedMenuContentObject.TimeBasedMenuType>@Model.TimeBasedMenuContentObject.TimeBasedMenuType.ToString().ToLower()</a>
+            @Model.TimeBasedMenuContentObject.TextAfterTimeBasedMenuName
         </p>
     </div>
 </div>

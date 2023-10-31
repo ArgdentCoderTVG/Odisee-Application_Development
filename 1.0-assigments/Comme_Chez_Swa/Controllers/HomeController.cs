@@ -1,104 +1,110 @@
-﻿using Comme_Chez_Swa.Models;
+﻿using Comme_Chez_Swa.Exceptions;
+using Comme_Chez_Swa.Models;
 using Comme_Chez_Swa.Models.Home;
-using Comme_Chez_Swa.Models.Home.Menu;
-using Comme_Chez_Swa.Models.Home.Reservations;
 using Comme_Chez_Swa.Models.Home.Utility;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Text.Json;
-using System.IO;
 
 namespace Comme_Chez_Swa.Controllers
 {
     public class HomeController : Controller
     {
-        // [ESSENCE] instance backing variable
-        private readonly ILogger<HomeController> _logger;
+        private const string RESOURCES_FILE_LOCATION = "wwwroot/json/resourceConfig.json";
+        private const string NAME_OF_RESTAURANT = "Comme Chez Swa";
+        private const string MENU_TIMEBASED_TEXT_TEMPLATE = $"Neem snel een kijkje naar ons heerlijke {TimeBasedMenuContent.MENUTYPE_PLACEHOLDER} menu!";
 
-        // [ESSENCE] Constructor (argumented)
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
+        #region Index
         // [ESSENCE] Home controller Index action
         public IActionResult Index()
         {
-            LoadResourcesJsonIntoViewData();
+            // Initialise data
+            GenerateViewDataItems();
+            TimeBasedMenuContent timeBasedMenuContentObject = GenerateTimeBasedMenuObject();
 
-            IndexViewModel indexViewModel = new IndexViewModel(GenerateDynamicMenuInstance());
+            // Construct the output
+            IndexViewModel indexViewModel = new IndexViewModel(timeBasedMenuContentObject);
 
+            // Assign or return the output
             return View(indexViewModel);
         }
 
-        private void LoadResourcesJsonIntoViewData()
+        private void GenerateViewDataItems()
         {
-            string json = System.IO.File.ReadAllText("wwwroot/json/imageConfig.json");
-            Dictionary<string, object> configData;
+            // Initialise with values
+            ViewData["Title"] = NAME_OF_RESTAURANT;
 
-            using (JsonDocument doc = JsonDocument.Parse(json))
+            // Initialise with logic
+            GenerateViewDataResourcePathsDictionary();
+        }
+
+        private void GenerateViewDataResourcePathsDictionary()
+        {
+            // Define the in-/ and output
+            string resourcePathsJsonUrl = System.IO.File.ReadAllText(RESOURCES_FILE_LOCATION);
+            Dictionary<string, object> dictResourcePaths = new Dictionary<string, object>();
+
+            // Produce a result
+            using (JsonDocument jsonResourcesDocument = JsonDocument.Parse(resourcePathsJsonUrl))
             {
-                configData = new Dictionary<string, object>();
-
-                foreach (JsonProperty property in doc.RootElement.EnumerateObject())
+                foreach (JsonProperty jsonProperty in jsonResourcesDocument.RootElement.EnumerateObject())
                 {
-                    configData[property.Name] = property.Value.GetString();
+                    dictResourcePaths[jsonProperty.Name] = 
+                        jsonProperty.Value.GetString() ?? 
+                        throw new JsonReadException($"JSON property name \"{jsonProperty.Name}\" was null");
                 }
             }
 
-            ViewData["ImageConfig"] = configData;
+            // Assign or return the output
+            ViewData["ImageConfig"] = dictResourcePaths;
         }
 
-        private DynamicMenuContent GenerateDynamicMenuInstance()
+        private TimeBasedMenuContent GenerateTimeBasedMenuObject()
         {
-            string partOfDayBasedMenuFullText = $"Neem snel een kijkje naar ons heerlijke {DynamicMenuContent.MENUTYPEPLACEHOLDER} menu!";
-            string controllerName = nameof(HomeController).Replace("Controller", "");
-            string actionName = nameof(HomeController.Menu);
-            return new DynamicMenuContent(partOfDayBasedMenuFullText, controllerName, actionName);
-        }
+            // Define the in-/ and output
+            string fullTimeBasedMenuTextWithPlaceholder = MENU_TIMEBASED_TEXT_TEMPLATE;
+            string targetMenuControllerName = nameof(HomeController).Replace("Controller", "");
+            string targetMenuControllerActionName = nameof(HomeController.Menu);
 
-        
+            // Construct the output
+            TimeBasedMenuContent timeBasedMenuTextObject = new TimeBasedMenuContent(fullTimeBasedMenuTextWithPlaceholder, targetMenuControllerName, targetMenuControllerActionName);
+
+            // Assign or return the output
+            return timeBasedMenuTextObject;
+        }
+        #endregion
 
         // [ESSENCE] Home controller About action 
         public IActionResult About()
         {
-            // Arrange data
-            string aboutUsHeadingText = String.Empty;
-            string aboutUsContentText = String.Empty;
+            //string aboutUsHeadingText = String.Empty;
+            //string aboutUsContentText = String.Empty;
 
+            //AboutViewModel aboutViewModel = new AboutViewModel(aboutUsHeadingText, aboutUsContentText);
 
-            AboutViewModel aboutViewModel = new AboutViewModel(aboutUsHeadingText, aboutUsContentText);
-
-            // Act
             return View();
         }
 
         // [ESSENCE] Home controller Menu action 
-        public IActionResult Menu(DynamicMenuContent menuTextWithPageLinkMVC)
+        public IActionResult Menu(TimeBasedMenuContent menuTextWithPageLinkMVC)
         {
-            // Arrange data
-            string menuTitle = String.Empty;
-            string menuDescription = String.Empty;
-            ImmutableArray<MenuSection> sections = new ImmutableArray<MenuSection>();
+            //string menuTitle = String.Empty;
+            //string menuDescription = String.Empty;
+            //ImmutableArray<MenuSection> sections = new ImmutableArray<MenuSection>();
 
+            //MenuViewModel menuViewModel = new MenuViewModel("","", new ImmutableArray<MenuSection>());
 
-            MenuViewModel menuViewModel = new MenuViewModel("","", new ImmutableArray<MenuSection>());
-
-            // Act
             return View();
         }
 
         // [ESSENCE] Home controller Reservations action 
         public IActionResult Reservations()
         {
-            // Arrange data
-            ImmutableArray<Reservation> reservationsAll = new ImmutableArray<Reservation>();
-            Reservations reservations = new Reservations(reservationsAll);
+            //ImmutableArray<Reservation> reservationsAll = new ImmutableArray<Reservation>();
+            //Reservations reservations = new Reservations(reservationsAll);
 
-            ReservationsViewModel reservationsViewModel = new ReservationsViewModel(reservations);
+            //ReservationsViewModel reservationsViewModel = new ReservationsViewModel(reservations);
 
-            // Act
             return View();
         }
 
@@ -106,11 +112,13 @@ namespace Comme_Chez_Swa.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            // Arrange data
+            // Define the in-/ and output
             ErrorViewModel errorViewModel = new ErrorViewModel(Activity.Current?.Id ?? HttpContext.TraceIdentifier);
 
-            // Act
+            // Assign or return the output
             return View(errorViewModel);
         }
+
+        //TODO: I need a modal popping up and telling me about erros instead of a full page (i.e. handle errors)
     }
 }

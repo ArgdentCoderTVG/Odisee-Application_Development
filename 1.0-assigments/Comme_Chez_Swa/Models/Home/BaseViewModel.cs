@@ -2,6 +2,6 @@
 {
     public abstract class BaseViewModel
     {
-        public string? PageTitle { get; set; }
+        // TODO: If necessary, centralise logic or aspects
     }
 }

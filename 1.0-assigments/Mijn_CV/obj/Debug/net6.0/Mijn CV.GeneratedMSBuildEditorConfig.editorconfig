@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Mijn_CV
 build_property.RootNamespace = Mijn_CV
-build_property.ProjectDir = C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Odisee-Application_Development\odisee-AD-MijnCV_repo\Mijn CV\
+build_property.ProjectDir = C:\Users\tibov\Documents\1.0-Odisee\Odisee-Y2\Odisee-Y2_AppDev\1.0-assigments\Mijn_CV\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\tibov\Documents\1.0-Odisee\2.1-Lessen-Y2Q1\Application_Development\Application-Development\Odisee-Application_Development\odisee-AD-MijnCV_repo\Mijn CV
+build_property.MSBuildProjectDirectory = C:\Users\tibov\Documents\1.0-Odisee\Odisee-Y2\Odisee-Y2_AppDev\1.0-assigments\Mijn_CV
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/odisee-AD-MijnCV_repo/Mijn CV/Views/Home/DevilFruit.cshtml]
+[C:/Users/tibov/Documents/1.0-Odisee/Odisee-Y2/Odisee-Y2_AppDev/1.0-assigments/Mijn_CV/Views/Home/DevilFruit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXZpbEZydWl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/odisee-AD-MijnCV_repo/Mijn CV/Views/Home/Index.cshtml]
+[C:/Users/tibov/Documents/1.0-Odisee/Odisee-Y2/Odisee-Y2_AppDev/1.0-assigments/Mijn_CV/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/odisee-AD-MijnCV_repo/Mijn CV/Views/Home/Luffy.cshtml]
+[C:/Users/tibov/Documents/1.0-Odisee/Odisee-Y2/Odisee-Y2_AppDev/1.0-assigments/Mijn_CV/Views/Home/Luffy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMdWZmeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/odisee-AD-MijnCV_repo/Mijn CV/Views/Home/Sanji.cshtml]
+[C:/Users/tibov/Documents/1.0-Odisee/Odisee-Y2/Odisee-Y2_AppDev/1.0-assigments/Mijn_CV/Views/Home/Sanji.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYW5qaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/odisee-AD-MijnCV_repo/Mijn CV/Views/Home/Zoro.cshtml]
+[C:/Users/tibov/Documents/1.0-Odisee/Odisee-Y2/Odisee-Y2_AppDev/1.0-assigments/Mijn_CV/Views/Home/Zoro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxab3JvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/odisee-AD-MijnCV_repo/Mijn CV/Views/Shared/Error.cshtml]
+[C:/Users/tibov/Documents/1.0-Odisee/Odisee-Y2/Odisee-Y2_AppDev/1.0-assigments/Mijn_CV/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/odisee-AD-MijnCV_repo/Mijn CV/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/tibov/Documents/1.0-Odisee/Odisee-Y2/Odisee-Y2_AppDev/1.0-assigments/Mijn_CV/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/odisee-AD-MijnCV_repo/Mijn CV/Views/_ViewImports.cshtml]
+[C:/Users/tibov/Documents/1.0-Odisee/Odisee-Y2/Odisee-Y2_AppDev/1.0-assigments/Mijn_CV/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/odisee-AD-MijnCV_repo/Mijn CV/Views/_ViewStart.cshtml]
+[C:/Users/tibov/Documents/1.0-Odisee/Odisee-Y2/Odisee-Y2_AppDev/1.0-assigments/Mijn_CV/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tibov/Documents/1.0-Odisee/2.1-Lessen-Y2Q1/Application_Development/Application-Development/Odisee-Application_Development/odisee-AD-MijnCV_repo/Mijn CV/Views/Shared/_Layout.cshtml]
+[C:/Users/tibov/Documents/1.0-Odisee/Odisee-Y2/Odisee-Y2_AppDev/1.0-assigments/Mijn_CV/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-b0e74wycp4

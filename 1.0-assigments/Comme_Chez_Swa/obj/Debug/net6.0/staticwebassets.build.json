@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mbtOW/KekYvxzgX/+D8DQ6txkt9GodQpmCvb9+39Htg=",
+  "Hash": "d64HfrTwNoxmXemgS655y+u8ntIgJ0WmC99TkALw2m4=",
   "Source": "Comme Chez Swa",
   "BasePath": "_content/Comme Chez Swa",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Comme Chez Swa.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\css\\index_Style.css",
+      "SourceId": "Comme Chez Swa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\",
+      "BasePath": "_content/Comme Chez Swa",
+      "RelativePath": "css/index_Style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\index_Style.css"
     },
     {
       "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\css\\site.css",
@@ -187,12 +204,12 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\json\\imageConfig.json",
+      "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\json\\resourceConfig.json",
       "SourceId": "Comme Chez Swa",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\",
       "BasePath": "_content/Comme Chez Swa",
-      "RelativePath": "json/imageConfig.json",
+      "RelativePath": "json/resourceConfig.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,7 +218,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\json\\imageConfig.json"
+      "OriginalItemSpec": "wwwroot\\json\\resourceConfig.json"
     },
     {
       "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
