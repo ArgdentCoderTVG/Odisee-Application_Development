@@ -7,15 +7,15 @@ namespace Comme_Chez_Swa.Models.Home.Menu
     public class MenuViewModel : BaseViewModel
     {
         // [NOTE] Collections are fixed-size, immutable and simple -> ImmutableArray<Type>
-        public string MenuTitle { get; }
-        public string MenuDescription { get; }
-        public ImmutableArray<MenuSection> Sections { get; }
+        public string TimeBasedGreetingText { get; }
+        public string TimeBasedMenuText { get; }
+        public ImmutableArray<MenuSection>? Sections { get; }
 
         // [NOTE] One entry point for altering the object state
-        public MenuViewModel(string menuTitle, string menuDescription, ImmutableArray<MenuSection> sections)
+        public MenuViewModel(string timeBasedGreetingText, string timeBasedMenuText, ImmutableArray<MenuSection>? sections)
         {
-            MenuTitle = menuTitle;
-            MenuDescription = menuDescription;
+            TimeBasedGreetingText = timeBasedGreetingText;
+            TimeBasedMenuText = timeBasedMenuText;
             Sections = sections;
         }
     }

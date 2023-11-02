@@ -17,6 +17,7 @@
 
         // Properties
         public string TimeBasedMenuTextWithPlaceholder => $"{TextBeforeTimeBasedMenuName} {MENUTYPE_PLACEHOLDER} {TextAfterTimeBasedMenuName}";
+        public string TimeBasedMenuTextWithMenuTypeValue => $"{TextBeforeTimeBasedMenuName} {TimeBasedMenuType.ToString().ToLower()} {TextAfterTimeBasedMenuName}";
         public EnumMenuType TimeBasedMenuType { get; private set; }
         public EnumGreetingType TimeBasedGreetingType { get; private set; }
         public string MenuControllerActionName { get; }
@@ -49,7 +50,7 @@
             string placeholder = MENUTYPE_PLACEHOLDER;
             int placeholderIndex = input.IndexOf(placeholder);
 
-            // Process a result
+            // Produce a result
             string localTextBefore = input.Substring(0, placeholderIndex);
             string localTextAfter = input.Substring(placeholderIndex + placeholder.Length);
 

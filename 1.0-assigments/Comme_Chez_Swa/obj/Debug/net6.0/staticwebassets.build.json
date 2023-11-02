@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d64HfrTwNoxmXemgS655y+u8ntIgJ0WmC99TkALw2m4=",
+  "Hash": "fucOEXGCuath3p0VWcrqyAaVh9aKvT/KqenBNIR7j9s=",
   "Source": "Comme Chez Swa",
   "BasePath": "_content/Comme Chez Swa",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\index_Style.css"
+    },
+    {
+      "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\css\\menu_Style.css",
+      "SourceId": "Comme Chez Swa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\",
+      "BasePath": "_content/Comme Chez Swa",
+      "RelativePath": "css/menu_Style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\menu_Style.css"
     },
     {
       "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\css\\site.css",

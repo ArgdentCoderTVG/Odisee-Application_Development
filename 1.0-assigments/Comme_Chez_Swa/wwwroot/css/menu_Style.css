@@ -1,0 +1,4 @@
+﻿/* Scoped CSS: separation of C#-HTML-Bootstrap and CSS (I like to see what's CSS and what's Bootstrap) */
+.menuLink {
+    text-decoration: none;
+}
