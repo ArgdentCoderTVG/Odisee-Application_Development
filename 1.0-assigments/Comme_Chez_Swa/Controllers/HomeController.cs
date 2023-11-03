@@ -13,19 +13,17 @@ namespace Comme_Chez_Swa.Controllers
     {
         private const string RESOURCES_FILE_LOCATION = "wwwroot/json/resourceConfig.json";
         private const string NAME_OF_RESTAURANT = "Comme Chez Swa";
-        private const string MENU_TIMEBASED_TEXT_TEMPLATE = $"Neem snel een kijkje naar ons heerlijke {TimeBasedMenuContent.MENUTYPE_PLACEHOLDER} menu!";
         public static TimeBasedMenuContent? TimeBasedMenuContentObject { get; private set;}
 
         #region Index
-        // [ESSENCE] Home controller Index action
         public IActionResult Index()
         {
             // Initialise data
             GenerateViewDataItems();
-            TimeBasedMenuContent timeBasedMenuContentObject = GenerateTimeBasedMenuObject();
+            TimeBasedMenuContentObject = TimeBasedMenuContent.GenerateTimeBasedMenuObject();
 
             // Construct the output
-            IndexViewModel indexViewModel = new IndexViewModel(timeBasedMenuContentObject);
+            IndexViewModel indexViewModel = new IndexViewModel(TimeBasedMenuContentObject);
 
             // Assign or return the output
             return View(indexViewModel);
@@ -63,25 +61,9 @@ namespace Comme_Chez_Swa.Controllers
             // Assign or return the output
             ViewData["ImageConfig"] = dictResourcePaths;
         }
-
-        private TimeBasedMenuContent GenerateTimeBasedMenuObject()
-        {
-            // Define the in-/ and output
-            string fullTimeBasedMenuTextWithPlaceholder = MENU_TIMEBASED_TEXT_TEMPLATE;
-            string targetMenuControllerName = nameof(HomeController).Replace("Controller", "");
-            string targetMenuControllerActionName = nameof(HomeController.Menu);
-
-            // Construct the output
-            TimeBasedMenuContent timeBasedMenuContentObject = new TimeBasedMenuContent(fullTimeBasedMenuTextWithPlaceholder, targetMenuControllerName, targetMenuControllerActionName);
-
-            // Assign or return the output
-            TimeBasedMenuContentObject = timeBasedMenuContentObject;
-            return timeBasedMenuContentObject;
-        }
         #endregion
 
         #region AboutUs
-        // [ESSENCE] Home controller About action 
         public IActionResult About()
         {
             // Define the in-/ and output
@@ -96,20 +78,6 @@ namespace Comme_Chez_Swa.Controllers
         }
         #endregion
 
-        // [ESSENCE] Home controller Menu action 
-        public IActionResult Menu(string timeBasedMenuType)
-        {
-            // Initialise data
-            GenerateViewDataItems();
-
-            // Construct the output
-            MenuViewModel menuViewModel = MenuViewModelFactory.CreateMenuViewModel();
-
-            // Assign or return the output
-            return View(menuViewModel);
-        }
-
-        // [ESSENCE] Home controller Reservations action 
         public IActionResult Reservations()
         {
             //ImmutableArray<Reservation> reservationsAll = new ImmutableArray<Reservation>();
@@ -120,7 +88,6 @@ namespace Comme_Chez_Swa.Controllers
             return View();
         }
 
-        // [ESSENCE] Home controller (catched) error action 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

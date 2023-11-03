@@ -15,4 +15,8 @@
     <Content Include="Templates.txt" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\NewFolder\" />
+  </ItemGroup>
+
 </Project>

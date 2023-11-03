@@ -31,9 +31,10 @@
             @Model.TimeBasedMenuContentObject.TextBeforeTimeBasedMenuName
             <a id="home_root_contentContainer-MenuLink"
                class="mt-2 menuLink"
-               asp-controller=@Model.TimeBasedMenuContentObject.MenuControllerName
-               asp-action=@Model.TimeBasedMenuContentObject.MenuControllerActionName>
-                @Model.TimeBasedMenuContentObject.TimeBasedMenuType.ToString().ToLower()
+               asp-controller="Menu"
+               asp-action="Menu"
+               asp-route-menuId=@Model.TimeBasedMenuContentObject.TimeBasedMenu.Id>
+                @Model.TimeBasedMenuContentObject.TimeBasedMenu.Naam.Replace("menu", "").ToLower()
                </a>
             @Model.TimeBasedMenuContentObject.TextAfterTimeBasedMenuName
         </p>

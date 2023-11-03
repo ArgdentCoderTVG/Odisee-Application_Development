@@ -1,0 +1,60 @@
+﻿@using Comme_Chez_Swa.Models.Menu;
+@using System.Globalization;
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/menu_Style.css">
+}
+
+@model Comme_Chez_Swa.Models.Menu.MenuViewModel
+
+@{
+    Dictionary<string, object>? imageConfigInstance = ViewData["ImageConfig"] as Dictionary<string, object>;
+    string? logoPath = null;
+
+    if (imageConfigInstance != null)
+    {
+        logoPath = imageConfigInstance["commeChezSwaLogo"] as string;
+    }
+}
+
+
+<div id="home-root" class="container">
+    <div id="home_root-menuContainer" class="d-flex flex-row align-items-start">
+
+        <div id="menu_root_menuContainer-MenuItemsContainer" class="d-flex flex-column align-items-start px-4 me-5">
+            <h1 id="MenuItemsContainer-ItemsListTitle" class="mt-2 pb-4">
+                @Model.DisplayedMenu.Naam
+            </h1>
+            <ul id="MenuItemsContainer-ItemsList">
+                @foreach (Gerecht selectedGerecht in Model.DisplayedMenu.Gerechten)
+                {
+                    <li id="MenuItemsContainer_ItemsList-Item@(@selectedGerecht.Naam.Replace(" ", "_"))" class="@(selectedGerecht.IsVeggie ? "fst-italic" : "")">
+                        @selectedGerecht.Naam @(selectedGerecht.IsVeggie ? "(vegetarisch)" : ""): @selectedGerecht.Prijs.ToString("C2", CultureInfo.CreateSpecificCulture("nl-BE"));
+                    </li>
+                }
+            </ul>
+        </div>
+
+        <div id="menu_root_menuContainer-MenuItemsContainer" class="d-flex flex-column align-items-start px-4 ms-5">
+            <h1 id="MenuItemsContainer-ItemsListTitle" class="mt-2 pb-4">
+                Onze Menu's
+            </h1>
+
+            <ul id="MenuItemsContainer-ItemsList">
+                @foreach (Menu availableMenu in MenuViewModel.AvailableMenus)
+                {
+                    <li id="MenuItemsContainer_ItemsList-Item@(availableMenu.Naam)">
+                        <a id="MenuItemsContainer_ItemsList_Item@(availableMenu.Naam)-MenuLink"
+                           class="mt-2 menuLink"
+                           asp-controller="Menu"
+                           asp-action="Menu"
+                           asp-route-menuId="@availableMenu.Id">
+                            @availableMenu.Naam
+                        </a>
+                    </li>
+                }
+            </ul>
+
+        </div>
+    </div>
+</div>

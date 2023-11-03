@@ -1,10 +1,13 @@
-﻿namespace Comme_Chez_Swa.Models.Home.Utility
+﻿using Comme_Chez_Swa.Controllers;
+
+namespace Comme_Chez_Swa.Models.Home.Utility
 {
     // [NOTE] POCO with data integrity focus, solely instanced/manipulated using constructor (instance state is always intial state)
     public class TimeBasedMenuContent
     {
         // Variable members
         public const string MENUTYPE_PLACEHOLDER = "{0}";
+        private const string MENU_TIMEBASED_TEXT_TEMPLATE = $"Neem snel een kijkje naar ons heerlijke {TimeBasedMenuContent.MENUTYPE_PLACEHOLDER} menu!";
 
         // Custom types
         private enum CurrentTimeRange
@@ -17,22 +20,18 @@
 
         // Properties
         public string TimeBasedMenuTextWithPlaceholder => $"{TextBeforeTimeBasedMenuName} {MENUTYPE_PLACEHOLDER} {TextAfterTimeBasedMenuName}";
-        public string TimeBasedMenuTextWithMenuTypeValue => $"{TextBeforeTimeBasedMenuName} {TimeBasedMenuType.ToString().ToLower()} {TextAfterTimeBasedMenuName}";
-        public EnumMenuType TimeBasedMenuType { get; private set; }
+        public string TimeBasedMenuTextWithMenuTypeValue => $"{TextBeforeTimeBasedMenuName} {TimeBasedMenu.Naam.Replace("menu", "").ToLower()} {TextAfterTimeBasedMenuName}";
+        public Comme_Chez_Swa.Models.Menu.Menu TimeBasedMenu { get; private set; }
         public EnumGreetingType TimeBasedGreetingType { get; private set; }
-        public string MenuControllerActionName { get; }
-        public string MenuControllerName { get; }
 
         public string TextBeforeTimeBasedMenuName { get; private set; }
         public string TimeBasedMenuName { get; private set; }
         public string TextAfterTimeBasedMenuName { get; private set; }
 
         // Constructor
-        public TimeBasedMenuContent(string timeBasedMenuTextWithPlaceholder, string targetMenuControllerName, string targetMenuControllerActionName)
+        public TimeBasedMenuContent(string timeBasedMenuTextWithPlaceholder)
         {
             // Initialise with values
-            MenuControllerName = targetMenuControllerName;
-            MenuControllerActionName = targetMenuControllerActionName;
             TextBeforeTimeBasedMenuName = String.Empty;
             TimeBasedMenuName = String.Empty;
             TextAfterTimeBasedMenuName = String.Empty;
@@ -63,33 +62,33 @@
         {
             // Define the in-/ and output
             CurrentTimeRange currentTimeRange = GenerateCurrentTimeRange();
-            EnumMenuType menuType = default;
             EnumGreetingType greetingType = default;
+            string currentSelectedMenuId = string.Empty;
 
             // Decide the output value
             if (currentTimeRange == CurrentTimeRange.BeforeAndNotIncluding11)
             {
-                menuType = EnumMenuType.Ontbijt;
+                currentSelectedMenuId = "ONT";
                 greetingType = EnumGreetingType.Goeiemorgen;
             }
             else if (currentTimeRange == CurrentTimeRange.Between11AndNotIncluding14)
             {
-                menuType = EnumMenuType.Lunch;
+                currentSelectedMenuId = "LUNCH";
                 greetingType = EnumGreetingType.Goeiemiddag;
             }
             else if (currentTimeRange == CurrentTimeRange.Between14AndNotIncluding17)
             {
-                menuType = EnumMenuType.Suggestie;
+                currentSelectedMenuId = "SUGG";
                 greetingType = EnumGreetingType.Welkom;
             }
             else if (currentTimeRange == CurrentTimeRange.AfterAndIncludingTo17)
             {
-                menuType = EnumMenuType.Suggestie;
+                currentSelectedMenuId = "SUGG";
                 greetingType = EnumGreetingType.Goeienavond;
             }
 
             // Assign or return the output
-            TimeBasedMenuType = menuType;
+            TimeBasedMenu = MenuController.MenuRepository.GetById(currentSelectedMenuId);
             TimeBasedGreetingType = greetingType;
         }
 
@@ -125,6 +124,18 @@
 
             // Assign or return the output
             return currentTimeRange;
+        }
+
+        public static TimeBasedMenuContent GenerateTimeBasedMenuObject()
+        {
+            // Define the in-/ and output
+            string fullTimeBasedMenuTextWithPlaceholder = MENU_TIMEBASED_TEXT_TEMPLATE;
+
+            // Construct the output
+            TimeBasedMenuContent timeBasedMenuContentObject = new TimeBasedMenuContent(fullTimeBasedMenuTextWithPlaceholder);
+
+            // Assign or return the output
+            return timeBasedMenuContentObject;
         }
     }
 }

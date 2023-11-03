@@ -1,4 +1,5 @@
-﻿
+﻿namespace Comme_Chez_Swa.Models.Menu
+{
     public class MenuRepository
     {
         private static List<Menu> _menus;
@@ -53,3 +54,4 @@
             return _menus.Find(x => x.Id == id);
         }
     }
+}

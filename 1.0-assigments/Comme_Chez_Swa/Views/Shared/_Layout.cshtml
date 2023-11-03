@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Comme_Chez_Swa.Models.Menu;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -26,13 +27,13 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Menu" asp-action="Menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">Over ons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Menu">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Reservations">Reservaties</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Menu" asp-action="Menu" asp-route-menuId="LUNCH">Lunch</a>
                         </li>
                     </ul>
                 </div>
