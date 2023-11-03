@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fucOEXGCuath3p0VWcrqyAaVh9aKvT/KqenBNIR7j9s=",
+  "Hash": "g2rng+Jx3lDg4wCFja7kfhDKUMMBMMhynJp0se7f42U=",
   "Source": "Comme Chez Swa",
   "BasePath": "_content/Comme Chez Swa",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Comme Chez Swa.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\css\\about_Style.css",
+      "SourceId": "Comme Chez Swa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\",
+      "BasePath": "_content/Comme Chez Swa",
+      "RelativePath": "css/about_Style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\about_Style.css"
     },
     {
       "Identity": "C:\\Users\\tibov\\Documents\\1.0-Odisee\\Odisee-Y2\\Odisee-Y2_AppDev\\1.0-assigments\\Comme_Chez_Swa\\wwwroot\\css\\index_Style.css",

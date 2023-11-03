@@ -1,5 +1,24 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@section Styles {
+    <link rel="stylesheet" href="~/css/about_Style.css" />
 }
+
+@using System.Text.Json;
+@model Comme_Chez_Swa.Models.Home.AboutViewModel
+
+@{
+    Dictionary<string, object>? imageConfigInstance = ViewData["ImageConfig"] as Dictionary<string, object>;
+    string? logoPath = null;
+
+    if (imageConfigInstance != null)
+    {
+        logoPath = imageConfigInstance["commeChezSwaLogo"] as string;
+    }
+}
+
+
+<div id="home-root" class="container">
+    <div id="home_root-menuContainer">
+        <h1>@Model.AboutUsHeadingText</h1>
+        <p class="aboutUs__paragraph">@Model.AboutUsContentText</p>
+    </div>
+</div>

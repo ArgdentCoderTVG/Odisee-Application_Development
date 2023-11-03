@@ -80,16 +80,21 @@ namespace Comme_Chez_Swa.Controllers
         }
         #endregion
 
+        #region AboutUs
         // [ESSENCE] Home controller About action 
         public IActionResult About()
         {
-            //string aboutUsHeadingText = String.Empty;
-            //string aboutUsContentText = String.Empty;
+            // Define the in-/ and output
+            string aboutUsHeadingText = "Over Ons";
+            string aboutUsContentText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non.\r\nVivamus eget nunc vitae odio facilisis faucibus in et sapien.\r\nPellentesque habitant morbi tristique senectus et netus et malesuada fames.\r\nSuspendisse potenti. Curabitur ac libero leo, in faucibus orci.\r\nPhasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae.\r\nCras maximus felis vitae enim pellentesque, sed sollicitudin mi gravida.\r\nAenean laoreet mi in malesuada feugiat. Nullam eget felis velit.\r\nInteger dapibus, mi ac tempor fermentum, ipsum nisi dignissim lacus.\r\nFusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.\r\nUt fermentum massa justo, sit amet risus etiam ultricies vehicula.\r\nDonec id elit non mi porta gravida at eget metus.\r\nSed posuere consectetur est at lobortis. Donec ullamcorper nulla non.\r\n";
 
-            //AboutViewModel aboutViewModel = new AboutViewModel(aboutUsHeadingText, aboutUsContentText);
+            // Construct the output
+            AboutViewModel aboutViewModel = new AboutViewModel(aboutUsHeadingText, aboutUsContentText);
 
-            return View();
+            // Assign or return the output
+            return View(aboutViewModel);
         }
+        #endregion
 
         // [ESSENCE] Home controller Menu action 
         public IActionResult Menu(string timeBasedMenuType)

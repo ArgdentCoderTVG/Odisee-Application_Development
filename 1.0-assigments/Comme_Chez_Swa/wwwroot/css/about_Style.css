@@ -1,0 +1,8 @@
+﻿/* Scoped CSS: separation of C#-HTML-Bootstrap and CSS (I like to see what's CSS and what's Bootstrap) */
+.aboutUs__paragraph {
+    width: 100px;
+}
+
+div {
+    background-color: red !important;
+}
