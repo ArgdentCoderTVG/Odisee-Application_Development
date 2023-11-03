@@ -9,14 +9,12 @@ namespace Comme_Chez_Swa.Models.Home.Menu
         // [NOTE] Collections are fixed-size, immutable and simple -> ImmutableArray<Type>
         public string TimeBasedGreetingText { get; }
         public string TimeBasedMenuText { get; }
-        public ImmutableArray<MenuSection>? Sections { get; }
 
         // [NOTE] One entry point for altering the object state
-        public MenuViewModel(string timeBasedGreetingText, string timeBasedMenuText, ImmutableArray<MenuSection>? sections)
+        public MenuViewModel(string timeBasedGreetingText, string timeBasedMenuText)
         {
             TimeBasedGreetingText = timeBasedGreetingText;
             TimeBasedMenuText = timeBasedMenuText;
-            Sections = sections;
         }
     }
 }
