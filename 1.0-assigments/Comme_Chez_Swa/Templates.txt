@@ -26,3 +26,13 @@
         <h1 id="">@Model.DynamicGreetingText</h1>
     </div>
 </div>
+
+
+
+// Defensive programming: ensure data state
+
+// Command-Query pattern: Query/initialise arguments
+
+// Command-Query pattern: Command/produce a result
+
+// Publish result
