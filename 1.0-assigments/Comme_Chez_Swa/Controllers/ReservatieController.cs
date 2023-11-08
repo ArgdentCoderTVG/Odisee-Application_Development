@@ -7,17 +7,18 @@ namespace Comme_Chez_Swa.Controllers
     {
         public IActionResult Reserveer()
         {
-            return View();
+            ReservatieBindingModel bindingModel = new ReservatieBindingModel();
+            return View(bindingModel);
         }
 
         [HttpPost]
-        public IActionResult Reserveer(UserBindingModel userModel)
+        public IActionResult Reserveer(ReservatieBindingModel userModel)
         {
             if (ModelState.IsValid)
             {
                 return RedirectToAction("Success");
             }
-            return View();
+            return View(userModel);
         }
 
         public IActionResult Success()

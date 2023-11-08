@@ -1,0 +1,57 @@
+﻿@using Comme_Chez_Swa.Models.Menu;
+@using System.Globalization;
+@using Comme_Chez_Swa.Models.Reservatie.Utility;
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/reserveer_Style.css">
+}
+
+@model Comme_Chez_Swa.Models.Reservatie.ReservatieBindingModel
+
+@{
+    Dictionary<string, object>? imageConfigInstance = ViewData["ImageConfig"] as Dictionary<string, object>;
+    string? logoPath = null;
+
+    if (imageConfigInstance != null)
+    {
+        logoPath = imageConfigInstance["commeChezSwaLogo"] as string;
+    }
+}
+
+
+<div id="home-root" class="container">
+    <div id="home_root-menuContainer" class="d-flex flex-row align-items-start">
+        <form asp-action="Reserveer" asp-controller="Reservatie" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="FirstName">Voornaam:</label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LastName">Familienaam:</label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email">Email-adres:</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="EmailConfirm">Email-adres bevestiging:</label>
+                <input asp-for="EmailConfirm" class="form-control" />
+                <span asp-validation-for="EmailConfirm" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+
+    </div>
+</div>
+
