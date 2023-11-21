@@ -1,0 +1,79 @@
+﻿@model User_Registration_App.Models.UserBindingModel
+
+@{
+    ViewData["Title"] = "Create User";
+}
+
+<h1>Create</h1>
+
+<h4>Create a new user</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="User" asp-action="Create">
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label"></label>
+                <input asp-for="BirthDate" class="form-control" />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="Gender" class="form-check-input" type="radio" id="rad_Male" value="@Gender.MALE">
+                        <label class="form-check-label" for="rad_Male">Man</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="Gender" class="form-check-input" type="radio" id="rad_Female" value="@Gender.FEMALE">
+                        <label class="form-check-label" for="rad_Female">Vrouw</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="Gender" class="form-check-input" type="radio" id="rad_Other" value="@Gender.OTHER ">
+                        <label class="form-check-label" for="rad_Other">Andere</label>
+                    </div>
+                </div>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SelectedLanguage" class="control-label"></label>
+                <select asp-for="SelectedLanguage" asp-items="@Model.Languages" class="form-control"></select>
+                <span asp-validation-for="SelectedLanguage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input asp-for="Newsletter" class="form-check-input">
+                    <label asp-for="Newsletter" class="form-check-label"></label>
+                </div>
+                <span asp-validation-for="Newsletter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+   @await Html.PartialAsync("_ValidationScriptsPartial.cshtml")
+}

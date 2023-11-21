@@ -1,0 +1,204 @@
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\appsettings.json
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.staticwebassets.runtime.json
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.exe
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.deps.json
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.runtimeconfig.json
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.pdb
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Humanizer.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.csproj.AssemblyReference.cache
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.AssemblyInfoInputs.cache
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.AssemblyInfo.cs
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.csproj.CoreCompileInputs.cache
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.RazorAssemblyInfo.cache
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.RazorAssemblyInfo.cs
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.Demo EF.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.build.Demo EF.props
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Demo EF.props
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Demo EF.props
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\scopedcss\bundle\Demo EF.styles.css
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\scopedcss\projectbundle\Demo EF.bundle.scp.css
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.csproj.CopyComplete
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\refint\Demo EF.dll
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.pdb
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.genruntimeconfig.cache
+C:\Users\sam.vanbuggenhout\source\repos\Demo EF\Demo EF\obj\Debug\net6.0\ref\Demo EF.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\appsettings.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.staticwebassets.runtime.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.exe
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.deps.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.runtimeconfig.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Demo EF.pdb
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Humanizer.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.csproj.AssemblyReference.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.AssemblyInfoInputs.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.AssemblyInfo.cs
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.csproj.CoreCompileInputs.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.RazorAssemblyInfo.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.RazorAssemblyInfo.cs
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.Demo EF.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.build.Demo EF.props
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Demo EF.props
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Demo EF.props
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\scopedcss\bundle\Demo EF.styles.css
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\scopedcss\projectbundle\Demo EF.bundle.scp.css
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.csproj.CopyComplete
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\refint\Demo EF.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.pdb
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\Demo EF.genruntimeconfig.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF\Demo EF\obj\Debug\net6.0\ref\Demo EF.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\appsettings.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Demo EF.staticwebassets.runtime.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Demo EF.exe
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Demo EF.deps.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Demo EF.runtimeconfig.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Demo EF.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Demo EF.pdb
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Humanizer.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.csproj.AssemblyReference.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.AssemblyInfoInputs.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.AssemblyInfo.cs
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.csproj.CoreCompileInputs.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.RazorAssemblyInfo.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.RazorAssemblyInfo.cs
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.Demo EF.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.build.Demo EF.props
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Demo EF.props
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Demo EF.props
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\scopedcss\bundle\Demo EF.styles.css
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\scopedcss\projectbundle\Demo EF.bundle.scp.css
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.csproj.CopyComplete
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\refint\Demo EF.dll
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.pdb
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\Demo EF.genruntimeconfig.cache
+C:\Users\sam.vanbuggenhout\Downloads\Demo EF CRUD\Demo EF\obj\Debug\net6.0\ref\Demo EF.dll

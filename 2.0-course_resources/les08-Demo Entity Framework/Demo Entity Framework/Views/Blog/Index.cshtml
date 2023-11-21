@@ -1,0 +1,16 @@
+﻿@model List<PostListViewModel>
+
+@{
+    ViewData["Title"] = "Blog";
+}
+
+<h1>Welkom op mijn blog!</h1>
+
+@foreach(var post in Model)
+{
+    <div>
+        <h3>@post.Titel</h3>
+        <p>@post.Inhoud</p>
+        <p><i>Gepubliceerd op @post.PublicatieDatum.ToString("dd/MM/yyyy")</i></p>
+    </div>
+}

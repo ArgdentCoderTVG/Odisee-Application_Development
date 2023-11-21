@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User Registration App (deel 3)", "User Registration App (deel 3)\User Registration App (deel 3).csproj", "{3C4D9610-972F-4D0B-84ED-20BC1D0E9FA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Student Registration (CRUD)", "Student Registration (CRUD)\Student Registration (CRUD).csproj", "{FAAD5152-8891-4A25-9D1A-BA428D5B51E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C4D9610-972F-4D0B-84ED-20BC1D0E9FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4D9610-972F-4D0B-84ED-20BC1D0E9FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4D9610-972F-4D0B-84ED-20BC1D0E9FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4D9610-972F-4D0B-84ED-20BC1D0E9FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAAD5152-8891-4A25-9D1A-BA428D5B51E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAAD5152-8891-4A25-9D1A-BA428D5B51E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAAD5152-8891-4A25-9D1A-BA428D5B51E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAAD5152-8891-4A25-9D1A-BA428D5B51E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56019F40-B5C4-48A0-8067-533B5921745B}
+	EndGlobalSection
+EndGlobal
